@@ -1,0 +1,49 @@
+import { Layout as ANTLayout } from 'antd';
+import { Link as RLink} from 'react-router-dom';
+import styled from 'styled-components';
+
+const Layout = styled(ANTLayout)`
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  overflow: hidden;
+`;
+const Header = styled(ANTLayout.Header)`
+  height: 200px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  background-color: var(--color-background);
+`;
+const Content = styled(ANTLayout.Content)`
+  height: 50vh;
+  background-color: var(--color-background);
+`;
+const Sider = styled(ANTLayout.Sider)`
+  background-color: var(--color-background) !important;
+
+  @media (max-width: 670px) {
+    display: none;
+  }
+`;
+const Container = styled.div`
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+const Link = styled(RLink)`
+  color: var(--color-text);
+
+  &:hover {
+    color: var(--color-accent);
+  }
+`;
+export const Styled = {
+  Layout,
+  Header,
+  Content,
+  Sider,
+  Container,
+  Link
+};

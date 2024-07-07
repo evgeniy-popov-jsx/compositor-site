@@ -1,0 +1,99 @@
+.animation {
+  position: absolute;
+  top: 0;
+  height: 90vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Анимация */
+.animation .line {
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+.animation .line_vert_m {
+  stroke-dasharray: 100%;
+}
+
+.animation .line_vert_s {
+  stroke-dasharray: 100%;
+}
+
+.animation .line_diagonal {
+  stroke-dasharray: 100%;
+}
+
+.animation circle {
+  opacity: 0;
+}
+
+.animation rect {
+  opacity: 0;
+}
+
+.hovered .line {
+  transform: translateX(0%);
+}
+
+.hovered .line_vert_m {
+  animation-name: drawLine;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hovered .line_vert_s {
+  animation-name: drawLine;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hovered .line_diagonal {
+  animation-name: drawLine;
+  animation-duration: 25s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 250ms;
+}
+
+.hovered circle {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hovered rect {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 100%;
+  }
+
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .animation {
+    display: none;
+  }
+}
