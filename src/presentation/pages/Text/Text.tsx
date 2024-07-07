@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-wrapper';
-import { CompositionInfo } from 'presentation/components/Composition-info/Composition-info';
 import { data } from 'domain/mock/texts';
 import { NavigateBack } from 'presentation/components/Navigate-back/Navigate-back';
 import { Styled } from './styles';
