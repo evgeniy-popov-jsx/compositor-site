@@ -27,6 +27,7 @@ const Image = styled(ANTImage)`
 const Paragraph = styled.p`
   text-align: justify;
   hyphens: auto;
+  word-wrap: break-word;
   max-width: 550px;
   font-size: 20px;
 `;

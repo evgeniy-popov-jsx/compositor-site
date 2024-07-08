@@ -34,12 +34,14 @@ const Link = styled(RLink)`
 const Paragraph = styled.p`
   text-align: justify;
   hyphens: auto;
+  word-wrap: break-word;
   max-width: 550px;
   font-size: 20px;
 `;
 const ContentContainer = styled.div`
   text-align: justify;
   hyphens: auto;
+  word-wrap: break-word;
   max-width: 550px;
   font-size: 20px;
 `;
