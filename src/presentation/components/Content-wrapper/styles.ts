@@ -7,6 +7,7 @@ const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
   gap: 40px;
   width: 100%;
   height: 100%;
+  min-height: 100%;
   padding: 30px 20px 20px 20px;
   background: var(--color-background);
   overflow-y: auto;
