@@ -7,7 +7,21 @@ interface Props {
   isHovered: boolean,
 }
 
-const calculateValue = (value: string, containerWidth: number) => {
+export const Animation: React.FC<Props> = ({ setting, isHovered }) => {
+  const {
+    line1,
+    line2,
+    line3,
+    circle,
+    rect,
+    diagonal,
+    right,
+    width,
+    top,
+  } = setting;
+  const [containerWidth, setContainerWidth] = useState(window.innerWidth);
+  
+  const calculateValue = (value: string, containerWidth: number) => {
   if (value.includes('calc')) {
     const matches = value.match(/calc\((.*)\)/);
     if (matches) {
@@ -31,21 +45,6 @@ const calculateValue = (value: string, containerWidth: number) => {
   }
   return value;
 };
-
-export const Animation: React.FC<Props> = ({ setting, isHovered }) => {
-  const {
-    line1,
-    line2,
-    line3,
-    circle,
-    rect,
-    diagonal,
-    right,
-    width,
-    top,
-  } = setting;
-
-  const [containerWidth, setContainerWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {

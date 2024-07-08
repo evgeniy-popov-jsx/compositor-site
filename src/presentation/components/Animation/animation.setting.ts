@@ -87,8 +87,8 @@ export const SetAbout = {
 			y2: '83px',
 		},
 		line2 : {
-			x1: 'calc(100% - 200px)',
-			x2: 'calc(100% - 200px)',
+			x1: 'calc(100% - 300px)',
+			x2: 'calc(100% - 300px)',
 			y1: '600px',
 			y2: '0px',
 		},
@@ -107,7 +107,7 @@ export const SetAbout = {
 			},
 			{
 				id: 2,
-				cx: 'calc(100% - 190px)',
+				cx: 'calc(100% - 290px)',
 				cy: '83px',
 				r: '3.5',
 			},
@@ -115,27 +115,27 @@ export const SetAbout = {
 		rect: [
 			{
 				id: 1,
-				x: 'calc(100% - 180px)',
+				x: 'calc(100% - 280px)',
 				y: '80px',
 			},
 			{
 				id: 2,
-				x: 'calc(100% - 203px)',
+				x: 'calc(100% - 303px)',
 				y: '550px',
 			},
 		],
 		diagonal: [
 			{
 				id: 1,
-				x1: 'calc(100% - 190px)',
-				x2: 'calc(100% - 210px)',
+				x1: 'calc(100% - 290px)',
+				x2: 'calc(100% - 310px)',
 				y1: '225px',
 				y2: '255px',
 			},
 			{
 				id: 2,
-				x1: 'calc(100% - 210px)',
-				x2: 'calc(100% - 190px)',
+				x1: 'calc(100% - 310px)',
+				x2: 'calc(100% - 290px)',
 				y1: '270px',
 				y2: '240px',
 			},

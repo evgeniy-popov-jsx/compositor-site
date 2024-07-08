@@ -21,8 +21,8 @@ const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
   `}
 
   ::-webkit-scrollbar {
-      width: 0;
-    }
+    display: none;
+  }
 
   @media (max-width: 540px) {
     gap: 20px;

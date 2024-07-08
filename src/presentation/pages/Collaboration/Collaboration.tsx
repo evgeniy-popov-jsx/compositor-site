@@ -2,7 +2,6 @@ import React from 'react';
 import { data } from 'domain/mock/collobaration';
 import { Styled } from './styles';
 import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-wrapper';
-import { Helmet } from 'react-helmet';
 
 export const Collaboration: React.FC = () => {
   const { 
@@ -22,10 +21,6 @@ export const Collaboration: React.FC = () => {
 
   return (
     <ContentWrapper position='top'>
-      <Helmet>
-        <title>polina korobkova | collaboration</title>
-        <meta name="description" content="we treasure composing as a way of thinking and structuring. it is therefore not necessarily linked to sounds. we aim for unidentifiable occurrences which are in-between various mediums, genres and forms." />
-      </Helmet>
       <Styled.GlobalStyle />
       <Styled.Image 
         className="custom-preview"
