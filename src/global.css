@@ -14,3 +14,6 @@
   --color-accent: #164DC4;
 }
 
+body {
+  background-color: var(--color-background);
+}
