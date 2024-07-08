@@ -21,9 +21,12 @@ const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
     padding-bottom: 130px;
   `}
 
+  scrollbar-width: none;
   ::-webkit-scrollbar {
-    display: none;
+    width: 0;
+    height: 0;
   }
+  overscroll-behavior: none;
 
   @media (max-width: 540px) {
     gap: 20px;
