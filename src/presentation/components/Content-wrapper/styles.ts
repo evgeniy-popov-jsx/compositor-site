@@ -11,7 +11,6 @@ const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
   padding: 30px 20px 20px 20px;
   background: var(--color-background);
   overflow-y: auto;
-  scrollbar-width: none;
 
   ${({ $position }) => $position === 'bottom' && `
     gap: 40px;
@@ -22,11 +21,24 @@ const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
   `}
 
   scrollbar-width: none;
-  ::-webkit-scrollbar {
+  -ms-overflow-style: none; 
+
+  &::-webkit-scrollbar {
     width: 0;
     height: 0;
   }
-  overscroll-behavior: none;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-overflow-scrolling: touch;
+  }
 
   @media (max-width: 540px) {
     gap: 20px;
