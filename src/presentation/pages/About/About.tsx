@@ -1,7 +1,8 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 import { data } from 'domain/mock/about';
-import { Styled } from './styles';
 import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-wrapper';
+import { Styled } from './styles';
 
 export const About: React.FC = () => {
   const { photo, description, cv } = data;
@@ -15,6 +16,10 @@ export const About: React.FC = () => {
 
   return (
     <ContentWrapper position='top'>
+      <Helmet>
+        <title>polina korobkova | about</title>
+        <meta name="description" content="we are a composer and a text manufacturer whose practice is situated between two medialities: discursive reflection, registered in texts, and practical experiments, taking..." />
+      </Helmet>
       <Styled.GlobalStyle />
       <Styled.Image 
         className="custom-preview"

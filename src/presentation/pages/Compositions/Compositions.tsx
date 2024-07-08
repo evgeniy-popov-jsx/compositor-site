@@ -2,6 +2,7 @@ import React from 'react';
 import { data } from 'domain/mock/compositions';
 import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-wrapper';
 import { Styled } from './styles';
+import { Helmet } from 'react-helmet';
 
 export const Compositions: React.FC = () => {
   function getRandomNumber() {
@@ -11,6 +12,10 @@ export const Compositions: React.FC = () => {
 
   return (
     <ContentWrapper position='bottom'>
+      <Helmet>
+        <title>polina korobkova | compositions</title>
+        <meta name="description" content="we treasure composing as a way of thinking and structuring. it is therefore not necessarily linked to sounds. we aim for unidentifiable occurrences which are in-between various mediums, genres and forms." />
+      </Helmet>
       {data.map((item) => (
         <Styled.ListItem key={item.id}>
           <Styled.Link to={`/compositions/${item.slug}`}>
