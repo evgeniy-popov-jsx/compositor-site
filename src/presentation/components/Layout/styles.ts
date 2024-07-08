@@ -14,6 +14,10 @@ const Header = styled(ANTLayout.Header)`
   padding-top: 10px;
   font-size: 20px;
   background-color: var(--color-background);
+
+  @media (max-width: 670px) {
+    height: 130px;
+  }
 `;
 const Content = styled(ANTLayout.Content)`
   background-color: var(--color-background);
@@ -27,7 +31,8 @@ const Sider = styled(ANTLayout.Sider)`
 `;
 const Container = styled.div`
   display: flex;
-  height: 100vh;
+  height: 100%;
+  gap: 20px;
   flex-direction: column;
   justify-content: space-between;
 `;

@@ -32,6 +32,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   height: 100%;
+  gap: 20px;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;

@@ -7,6 +7,10 @@ const Filter = styled.div`
   gap: 40px;
   top: 145px;
   left: 20px;
+  
+  @media (max-width: 670px) {
+    top: 100px;
+  }
 `;
 
 const Button = styled.button<{ $active: true | false }>`

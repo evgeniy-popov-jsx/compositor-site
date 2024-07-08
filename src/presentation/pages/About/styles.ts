@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   .ant-image-preview-mask {
     background-color: rgba(240, 241, 235, 0.2) !important;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
 `;
 const Image = styled(ANTImage)`
