@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Layout = styled(ANTLayout)`
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: var(--color-background);
   overflow: hidden;
 `;
@@ -16,7 +16,6 @@ const Header = styled(ANTLayout.Header)`
   background-color: var(--color-background);
 `;
 const Content = styled(ANTLayout.Content)`
-  height: 50vh;
   background-color: var(--color-background);
 `;
 const Sider = styled(ANTLayout.Sider)`

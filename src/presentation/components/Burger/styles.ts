@@ -1,4 +1,5 @@
 import { NavLink as RLink } from 'react-router-dom';
+import Div100vh from 'react-div-100vh'
 import styled, { keyframes } from 'styled-components';
 
 const Burger = styled.div`
@@ -15,10 +16,13 @@ const Burger = styled.div`
     display: block;
   }
 `;
+const CustomDiv = styled(Div100vh)`
+  pointer-events: none;
+`;
 const Container = styled.div`
   display: flex;
   gap: 10px;
-  height: 100vh;
+  height: 100%;
   padding: 20px 0px;
   flex-direction: column;
   align-items: end;
@@ -27,7 +31,7 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
@@ -179,17 +183,21 @@ const Footer = styled.div<{ $isChecked: boolean}>`
 const blurIn = keyframes`
   from {
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
   }
   to {
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
 `;
 const blurOut = keyframes`
   from {
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
   to {
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
   }
 `;
 const Blur= styled.div<{ $isChecked: boolean }>`
@@ -213,5 +221,6 @@ export const Styled = {
   Menu,
   Footer,
   Link,
-  Blur
+  Blur,
+  CustomDiv
 };
