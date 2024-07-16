@@ -1,5 +1,5 @@
 export const data = {
-  photo: 'https://res.cloudinary.com/dgihggopi/image/upload/v1718813325/About/about_photo_1_uc193w_j5xklr.jpg',
+  photo: 'https://lh3.googleusercontent.com/drive-viewer/AKGpihabsnrP3KULcn5_rCd7Hl1FJokrjpn_7gqCyPitNNdDJz1Ti8NhmAXj-Qw6QqYvP0Rlna4sAb_5Ap_iCVJMxlTBkLh51Xz2BA=s1600-rw-v1',
   description: `
   We are a composer and a text manufacturer whose practice is situated between two medialities: discursive reflection, registered in texts, and practical experiments, taking place between written scores, live performances, and recorded tracks. Following the testament of Susan Sontag, we emphasize art as an instrument of analysis — linking artistic exploration with theory.
   We usually start working on a piece with reflections on theoretical abstractions, consisting of culturological, philosophical, social, and semiotic problematics. Afterwards, a long process of searching and developing the adequate compositional methods and techniques for the defined theoretical concept follows. That’s the reason why our creating procedure always lasts a while, as for each piece we are trying to re-assemble our relation to writing, ourselves, and the world.
@@ -8,7 +8,7 @@ export const data = {
   We refuse to be categorized into any social strata or to define ourselves with any nationality. Please avoid this in naming us if you can.
   — Polina
   `,
-  cv: 'https://res.cloudinary.com/dgihggopi/image/upload/v1718782092/About/Polina_Korobkova_-_CV_24_Website_updated_w4oe7o.pdf',
+  cv: 'https://drive.google.com/file/d/1SWSODBR6ww7lLq9pD15zd-uKu1GxK7Ve/view?usp=drive_link',
 }
 
 interface data {

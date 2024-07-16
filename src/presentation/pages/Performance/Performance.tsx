@@ -82,7 +82,7 @@ export const Performance: React.FC = () => {
             ),
             toolbarRender: () => null,
           }}
-          src="https://res.cloudinary.com/dgihggopi/image/upload/v1720435821/watch_video_j10gtr.png"
+          src="/preview.png"
         />
       }
       </Styled.ImageContainer>

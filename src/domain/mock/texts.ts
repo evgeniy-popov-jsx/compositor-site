@@ -3,7 +3,7 @@ export const data: data[] = [
     id: 1,
     slug: 'spaces-surrounding-music',
     title: 'spaces surrounding music, spaces seeping into music',
-    src: 'https://res.cloudinary.com/dgihggopi/image/upload/v1718812335/Texts/Korobkova_-_spaces_surrounding_music_spaces_seeping_into_music_xkhfws.pdf',
+    src: 'https://drive.google.com/file/d/1NBVC1omxlcMFnpv2sxjn7YR-LDaWipSD/view?usp=drive_link',
     description: `
     the focus of this text lies on exploration of spaces in music, where the term is understood in an extended sense, as something that surrounds. this definition allows to take in observation both material and virtual dimensions of spaces and, most importantly, to trace how a variety of their hybrids influence, substitute, or flow into one another in compositional practice. topics of notation, memory, systems and methods of composing, atmosphere and authorship come into play with an emphases on multiple capabilities of surrounding to infiltrate phenomena, existing on its territory, and to trespass their sovereignty.
 

@@ -18,7 +18,7 @@ export const Text: React.FC = () => {
       {paragraphs?.map((paragraph, index) => (
         <Styled.Paragraph key={index}>{paragraph}</Styled.Paragraph>
       ))}
-      {textData && <Styled.Link to={textData.src}>{`read more >`}</Styled.Link>}
+      {textData && <Styled.Link to={textData.src} target="_blank" rel="noopener noreferrer">{`read more >`}</Styled.Link>}
     </ContentWrapper>
   );
 };

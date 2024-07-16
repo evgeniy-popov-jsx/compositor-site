@@ -1,6 +1,6 @@
 export const data = {
-  photo: 'https://res.cloudinary.com/dgihggopi/image/upload/v1718811442/Collaboration/collaboration_photo_1_ijti2h.jpg',
-  collaborationImg: 'https://res.cloudinary.com/dgihggopi/image/upload/v1718811444/Collaboration/collaboration_photo_2_yh7z5w.jpg',
+  photo: 'https://lh3.googleusercontent.com/drive-viewer/AKGpihbsoJEOlcVLzdmvzYHgY5ZU6Gtgo3Lj0V4o7xsGfV8Tpv8mm91_BjHXLWEcUDg52aizmBENOAJWYYB7RjtHTM1YdoaZ0Pl5ow=s1600-rw-v1',
+  collaborationImg: 'https://lh3.googleusercontent.com/drive-viewer/AKGpihaDEw1PnMTBdrUvi4Z64gu6UPwS0AAKoq0Pf7PWb513AeTR4ZVLIzX1BwLQhrsUlzYHv3mtm7E8NrvEVgWnRlCat6urG4HRxno=s1600-rw-v1',
   description: `
   on collaborating with us
   we treasure composing as a way of thinking and structuring. it is therefore not necessarily linked to sounds. we aim for unidentifiable occurrences which are in-between various mediums, genres and forms.    
