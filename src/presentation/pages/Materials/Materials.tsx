@@ -32,8 +32,8 @@ export const Materials: React.FC = () => {
       {paragraphs?.map((paragraph, index) => (
         <Styled.Paragraph key={index}>{paragraph}</Styled.Paragraph>
       ))}
-      <Styled.Link to={'anonymous-material_i'}>anonymous material_i</Styled.Link>
-      <Styled.Link to={'anonymous-material_ii'}>anonymous material_ii</Styled.Link>
+      <Styled.Link to={'anonymous-material_i'}>anonymous material i</Styled.Link>
+      <Styled.Link to={'anonymous-material_ii'}>anonymous material ii</Styled.Link>
     </ContentWrapper>
   );
 };

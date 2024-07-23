@@ -25,11 +25,13 @@ const Paragraph = styled.p`
   word-wrap: break-word;
   max-width: 550px;
   font-size: 20px;
+  text-transform: lowercase;
 `;
 const Sv = styled(RLink)`
   display: block;
   width: 50px;
   font-size: 20px;
+  text-transform: lowercase;
 `;
 export const Styled = {
   Image,

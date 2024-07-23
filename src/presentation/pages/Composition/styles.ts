@@ -25,6 +25,7 @@ const Image = styled(ANTImage)`
 const Link = styled(RLink)`
   max-width: max-content;
   font-size: 20px;
+  text-transform: lowercase;
 `;
 const Paragraph = styled.p`
   text-align: justify;
@@ -32,6 +33,7 @@ const Paragraph = styled.p`
   word-wrap: break-word;
   max-width: 550px;
   font-size: 20px;
+  text-transform: lowercase;
 `;
 const ImageContainer = styled.div`
   display: flex;

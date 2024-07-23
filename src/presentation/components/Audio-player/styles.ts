@@ -59,7 +59,7 @@ const Input = styled.div`
             height: 8px;
             background: var(--color-accent);
             border-radius: 0px;
-            cursor: pointer;
+            cursor: grab;
             margin-top: -1px;
             transition: transform 0.2s ease;
 
@@ -105,7 +105,7 @@ const InputVolume = styled.div`
             height: 8px;
             background: var(--color-accent);
             border-radius: 50%;
-            cursor: pointer;
+            cursor: grab;
             margin-top: -1px;
             transition: transform 0.2s ease;
 

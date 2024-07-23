@@ -5,9 +5,10 @@ export const data: Data[] = [
     full: false,
     src: false,
     date: '27.09.2024',
-    title: 'new piece for 2 performers with turntables',
-    description: 'Juliet Fraser and Hannah Weirich. Bludenzer Tage zeitgemäßer Musik',
-    place: 'Bludenz, Austria',
+    title: 'bludenzer tage zeitgemäßer musik',
+    orchestra: 'new piece for 2 performers with turntables',
+    description: 'juliet fraser and hannah weirich',
+    place: 'bludenz, austria',
     link: '',
     desc: '',
   },
@@ -17,8 +18,8 @@ export const data: Data[] = [
     full: true,
     src: true,
     date: '25.10.2024',
-    title: '»eight private spaces« for 18 musicians and 26 loudspeakers. Klangforum Wien.',
-    place: 'Wiener Konzerthaus, Mozart Hall, Vienna, Austria',
+    title: '»eight private spaces« for 18 musicians and 26 loudspeakers klangforum wien',
+    place: 'wiener konzerthaus, mozart hall, vienna, austria',
     link: 'https://en.klangforum.at/event/strange-bird',
     desc: '',
   },
@@ -29,8 +30,8 @@ export const data: Data[] = [
     src: false,
     date: '10.2024',
     title: '»haunted place« for string quartet and transducers',
-    description: 'Malin Grass and tba',
-    place: 'Stuttgart, Germany',
+    description: 'malin grass and tba',
+    place: 'stuttgart, germany',
     link: '',
     desc: '',
   },
@@ -40,8 +41,8 @@ export const data: Data[] = [
     full: false,
     src: false,
     date: '10.2025',
-    description: 'portrait concert in the framework of ‘Forum junger Komponist:innen’ award. tba',
-    place: 'Bayerische Akademie der Schönen Künste, Munich, Germany',
+    description: 'portrait concert in the framework of ‘forum junger komponist:innen’ award',
+    place: 'tba bayerische akademie der schönen künste, munich, germany',
     link: '',
     desc: '',
   },
@@ -52,9 +53,23 @@ export const data: Data[] = [
     src: false,
     date: '12.2025',
     title: 'new project for string quartet',
-    description: 'Quartetto Maurice. Musica in Prossimità 2025',
-    place: 'Turin, Italy',
+    description: 'quartetto maurice',
+    orchestra: '',
+    place: 'musica in prossimità 2025, turin, italy',
     link: 'http://www.quartettomaurice.com/it/progetti/new-music-for-four ',
+    desc: '',
+  },
+  {
+    id: 51,
+    upcoming: true,
+    full: true,
+    src: false,
+    date: '02.2026',
+    title: '»implanted memories«',
+    orchestra: 'for an automated arciorgano and female performer',
+    description: 'automated arciorgano and Johanna Vargas',
+    place: 'ECLAT, Stuttgart, Germany',
+    link: '',
     desc: '',
   },
   {
@@ -79,9 +94,9 @@ export const data: Data[] = [
     full: false,
     src: true,
     date: '15.03.2024',
-    title: 'round table: The Political in Music Today (Das Politische der Musik Heute)',
-    description: 'with Alan Hilario, Gordon Kampe, Julia Mihály, Matteo Nanni, Christian Grüny',
-    place: 'Hamburg University, Hamburg, Germany',
+    title: 'round table: the political in music today (das politische der musik heute)',
+    description: 'with alan hilario, gordon kampe, julia mihály, matteo nanni, christian grüny',
+    place: 'hamburg university, hamburg, germany',
     link: 'https://www.kulturwissenschaften.uni-hamburg.de/hm/uber-das-institut/aktuelles/2024-02-29-studientag-luigi-nono/flyer-nono-studientag.pdf',
     photos: [],
     desc: '',
@@ -92,14 +107,14 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '25.02.2024',
-    title: '»private spaces. concert version«. cresc… Biennale for Contemporary Music, LAB, Frankfurt am Main',
-    description: 'Ensemble Modern.',
-    place: 'cresc… Biennale for Contemporary Music, LAB, Frankfurt am Main, Germany',
+    title: '»private spaces. concert version«',
+    description: 'ensemble modern',
+    place: 'cresc… biennale for contemporary music, lab, frankfurt am main, germany',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaXIW073y7h6Y9xyDZXY3MsjEb615PaXeWCTtrFECX5g1zpUoGfU2w8WaJf8RFwr4OmXUzCKSYBnM-VPllY-znqwkdAozq2Ohw=s1600-rw-v1'
     ],
-    coop: '© cresc… 2024, Wonge Bergmann',
+    coop: '© cresc… 2024, wonge bergmann',
     desc: '',
   },
   {
@@ -109,8 +124,8 @@ export const data: Data[] = [
     src: true,
     date: '10.12.2023',
     title: `conference paper: »spaces surrounding music, spaces seeping into music«`,
-    description: `online musicology conference 'Music, Body, and Embodiment: New Approaches in Musicology’`,
-    place: 'Centro Studi Opera Omnia Luigi Boccherini',
+    description: `online musicology conference 'music, body, and embodiment: new approaches in musicology’`,
+    place: 'centro studi opera omnia luigi boccherini',
     link: 'https://www.luigiboccherini.org/2022/10/19/music-body-and-embodiment-new-approaches-in-musicology/',
     photos: [],
     coop: '',
@@ -123,8 +138,8 @@ export const data: Data[] = [
     src: true,
     date: '17.11.2023',
     title: `performative lecture: »inter-medial tools«`,
-    description: 'Workshop ‘Agency, rituals, gestures’ (Agency, Ritual, Geste. Verteilte Handlungsmacht in ästhetischen Praktiken) at the Research Centre for Aesthetics ',
-    place: 'Zurich University of Arts, Zurich, Switzerland',
+    description: 'workshop ‘agency, rituals, gestures’ (agency, ritual, geste. verteilte handlungsmacht in ästhetischen praktiken) at the research centre for aesthetics ',
+    place: 'zurich university of arts, zurich, switzerland',
     link: 'https://www.zhdk.ch/file/live/fd/fddc3227fe0efed3b0038556b5a6c3959e189c5c/51969.pdf',
     photos: [],
     coop: '',
@@ -136,9 +151,9 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '14.10.2023',
-    title: `Round Table: Crossing Borders: Artist in Search of Identity`,
-    description: 'with Peter Paul Kainrath, Dmitriy Renansky, Vladimir Rannev, Christine Fischer, Jamilia Jazylbekova and Petros Ovsepyan',
-    place: 'Voices Festival. Radialsystem, Berlin, Germany',
+    title: `round table: crossing borders: artist in search of identity`,
+    description: 'with peter paul kainrath, dmitriy renansky, vladimir rannev, christine fischer, jamilia jazylbekova and petros ovsepyan',
+    place: 'voices festival. radialsystem, berlin, germany',
     link: 'https://voices-program.com/e2023/cro',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZdyXIL0KcgJ2NxQDDypkHVAResdu-6SWzVkDBFPMiW2Pcxe8IN6PZDWa3utHcGSm1k96igbSsugibttmVuhUi16-ak1h9eOOY=s1600-rw-v1'
@@ -167,8 +182,8 @@ export const data: Data[] = [
     date: '24.06.2022',
     title: `»anonymous material ii«`,
     orchestra: 'for trombone, percussion, viola, cello und fixed electronics',
-    description: 'Julian Pfeil, Tobias Furholt, Justyna Robak and Sebastian Triebener',
-    place: 'Werk_statt_festival, HMDK, Stuttgart, Germany',
+    description: 'julian pfeil, tobias furholt, justyna robak and sebastian triebener',
+    place: 'werk_statt_festival, HMDK, Stuttgart, Germany',
     link: '',
     photos: [],
     coop: '',
@@ -182,8 +197,8 @@ export const data: Data[] = [
     date: '12.5, 14.5, 16.5, 17.5, 18.05.2022',
     title: `»S P U R E N«`,
     orchestra: 'site-specific music theatre for 5 female performers and pre-recorded, automated arciorgano',
-    description: 'Laure Casin, Elizabeth Freyhoff, Viktoria Matt, Alisa Milosevic, Julia Pfänder, loudspeakers, arciorgano',
-    place: 'Munich Biennale for New Music Theatre. Luftschutzbunker, basement of HMTM, Munich, Germany',
+    description: 'laure casin, elizabeth freyhoff, viktoria matt, alisa milosevic, julia pfänder, loudspeakers, arciorgano',
+    place: 'munich biennale for new music theatre. luftschutzbunker, basement of HMTM, Munich, Germany',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihbiLi8RE8bqQZPg6uDMkiQ7Mo44m_t3Ax722gtOXLRbeRsp_9bQZAuwZo_xf_hHbAjb45UR6HQbrXYUrMnAiaedzeuX8z9voPU=s1600-rw-v1',
@@ -197,17 +212,17 @@ export const data: Data[] = [
     desc: `
     press:
 
-    ‘Under the title ’S P U R E N' they are doing a phenomenal and depressing project. By the way, this is an old and ugly Nazi building, in which, among other things, works of art were hidden and all kinds of things probably happened that are not so great. Keyword: people were locked up here. And now there are these young singers, who perform on different stations with light and fantastic singing and so very small scenes between exile, between relationships, between tragic situations among themselves. It's only about three quarters of an hour, but it has more to it than some three- or four-hour operas, I thought. The whole thing was composed by Polina Korobkova and staged by Waltraud Lehner and Paulina Platzer’. 
+    ‘under the title ’S P U R E N' they are doing a phenomenal and depressing project. by the way, this is an old and ugly nazi building, in which, among other things, works of art were hidden and all kinds of things probably happened that are not so great. keyword: people were locked up here. and now there are these young singers, who perform on different stations with light and fantastic singing and so very small scenes between exile, between relationships, between tragic situations among themselves. It's only about three quarters of an hour, but it has more to it than some three- or four-hour operas, i thought. the whole thing was composed by polina korobkova and staged by waltraud lehner and paulina platzer’. 
 
-    — Deutschlandfunk Kultur 
+    — deutschlandfunk kultur 
 
-    'At the Biennale, you're not just presented with something, you participate. Perhaps most strongly in “S P U R E N", a production by the Musikhochschule in its basement. The building was once constructed by the Nazis as the "Führerbau", the cellar is a bunker, and now one encounters singers there in the greatest emotional distress, in states of emergency, very close and yet very removed - an experience that would be oppressive even without the current world events, but now completely gripping. The music of Polina Korobkova creeps into the head and into the mind, the wonderful Viktoria Matt begs singing for at least three words of a loved one’. 
+    'at the biennale, you're not just presented with something, you participate. Perhaps most strongly in “S P U R E N", a production by the Musikhochschule in its basement. the building was once constructed by the nazis as the "führerbau", the cellar is a bunker, and now one encounters singers there in the greatest emotional distress, in states of emergency, very close and yet very removed - an experience that would be oppressive even without the current world events, but now completely gripping. the music of Polina Korobkova creeps into the head and into the mind, the wonderful Viktoria Matt begs singing for at least three words of a loved one’. 
 
-    — Süddeutsche Zeitung 
+    — süddeutsche zeitung 
     `,
     interview: 'interview with polina on S P U R E N ',
     interviewSrc: 'https://neoblog.mx3.ch/index.php/2022/04/27/4002/',
-    coop: '© Jakob Schad'
+    coop: '© jakob schad'
   },
   {
     id: 15,
@@ -217,8 +232,8 @@ export const data: Data[] = [
     date: '31.03.2022',
     title: `»flashbacks to perform«`,
     orchestra: 'for solo piano',
-    description: 'Jean Pierre-Collot',
-    place: 'Bayerische Akademie der Schönen Künste, Munich, Germany',
+    description: 'jean pierre-collot',
+    place: 'bayerische akademie der schönen künste, munich, germany',
     link: 'https://www.badsk.de/presse/mitteilungen/zwei-abende-der-akademie-für-die-ukraine-mit-ukrainischen-und-russischen',
     photos: [],
     coop: '',
@@ -232,7 +247,7 @@ export const data: Data[] = [
     date: '16.12.2021',
     title: `»lecture-performance«.`,
     orchestra: 'master’s graduation',
-    place: 'Zurich University of Arts, Zurich, Switzerland ',
+    place: 'zurich university of arts, zurich, switzerland ',
     link: 'https://www.youtube.com/watch?v=JA0jjwEwBz8',
     photos: [],
     coop: '',
@@ -247,7 +262,7 @@ export const data: Data[] = [
     title: `»implanted memories« and acriorgano`,
     orchestra: 'for automated arciorgano and a female performer',
     description: 'polina korobkova and acriorgano',
-    place: 'Kunstraum Walcheturm, Zurich, Switzerland',
+    place: 'kunstraum walcheturm, zurich, switzerland',
     link: 'https://www.walcheturm.ch/archive/ignm-konzert-fast-forward-ii-ein-abend-durchgehender-musik ',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpiha41GWOH5d06tos_hYmG-Rq1dCsNbgQwXt5udy8ABlasxTQmR6USw9Qz1Eg6W5sfzgC_-GCyXv9gWxaOoNUNOSlsooF25Q2fg=s1600-rw-v1',
@@ -257,7 +272,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121279/implanted_memoreis_audio-MP3_fcbtqy.mp3',
+        audio: '/assets/implanted_memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
         author: 'implanted memories',
       }
     ],
@@ -272,8 +287,8 @@ export const data: Data[] = [
     date: '10.10.2021',
     title: `»haunted place«`,
     orchestra: 'for string quartet with transducers',
-    description: 'Quartetto Maurice',
-    place: 'Bludenzer Tage zeitgemäßer Musik, Bludenz, Austria',
+    description: 'quartetto maurice',
+    place: 'bludenzer tage zeitgemäßer musik, bludenz, austria',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaQ6AhBv4mq2j1suVZoiuXUjlfSmCcRBnpWIEY_wJiGo3Q75aZ5PK_BbIRny8o4FNVrO4u2PexDB0OQkFwJPnlIPlW7K8XxsjY=s1600-rw-v1',
@@ -290,10 +305,10 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '07.08.2021',
-    title: `»Pocket theatre. Porcelain projection #1«`,
+    title: `»pocket theatre. porcelain projection #1«`,
     orchestra: 'for bass clarinet and detuned violin',
     description: 'mdi ensemble',
-    place: 'Sala Donatoni of the Fabbrica del Vapore, Milano, Italy',
+    place: 'sala donatoni of the fabbrica del vapore, milano, italy',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaaQHeXegnj_OY5noEQIS2MSzqBnqFb8-SesWu_dlpPhYMvirsz4ZBBxdGZoEBmf1PCx3K6gjzMFkLM9RFB4X7HOahOfE_4Ltw=s1600-rw-v1',
@@ -309,19 +324,19 @@ export const data: Data[] = [
     date: '03.07.2021',
     title: `»flashbacks to perform«`,
     orchestra: 'for solo piano',
-    description: 'Alexandra Sikorskaya; polina korobkova',
-    place: 'Lange Nacht, Zurich University of Art, Zurich, Switzerland',
+    description: 'alexandra sikorskaya; polina korobkova',
+    place: 'lange nacht, zurich university of art, zurich, switzerland',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihbPzwwyjTQibo18Wzo2VXR9ezhio7XW3aKKyr7lQoXlOZHW6Rss2Eqi-AfIpZimwkPuhkayunEj4kj31ZzgDkkzD5rQNgDK8vY=s1600-rw-v1',
     ],
     audio: [
       {
-        audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121211/flashbacks_to_perform_audio_aleksandra-MP3_uazgnb.mp3',
+        audio: '/assets/flashbacks_to_perform/flashbacks_to_perform_audio_aleksandra-MP3_uazgnb.mp3',
         author: 'performed by Alexandra Sikorskaya'
       },
       {
-        audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121216/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
+        audio: '/assets/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
         author: 'performed by polina korobkova'
       }
     ],
@@ -336,15 +351,15 @@ export const data: Data[] = [
     date: '15.06.2021',
     title: `»Biy: eternal mantra for three fair maidens«`,
     orchestra: 'for 3 female performers with needles',
-    description: 'ensemble content under the direction of Mary Cheminava',
-    place: 'Diaghilev Festival, Perm',
+    description: 'ensemble content under the direction of mary cheminava',
+    place: 'diaghilev festival, perm',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaMnaKC2fS8AJKV_YA4D2U2dUsTnrgKzfNi5z9aM1bBtkrg7BpBm5xr1TNRQUrJlbX02g1phAFnJM3kVoLhbZ_rSUdnkYdh2w=s1600-rw-v1',
     ],
     audio: [
       {
-        audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121193/Biy_ensemble_content_audio-MP3_dpsb3j.mp3',
+        audio: '/assets/Biy_ensemble_content/Biy_ensemble_content_audio-MP3_dpsb3j.mp3',
         author: 'Biy: eternal mantra for three fair maidens'
       },
     ],
@@ -360,8 +375,8 @@ export const data: Data[] = [
     date: '09.03.2021',
     title: `»Biy: eternal mantra for three fair maidens«`,
     orchestra: 'for 3 female performers with needles ',
-    description: 'Trio Generator',
-    place: 'Unerhörte Musik, BKA Theater, Berlin, Germany',
+    description: 'trio generator',
+    place: 'unerhörte musik, bka theater, berlin, germany',
     link: 'https://www.youtube.com/watch?v=qT-VMLxGtw0',
     photos: [],
     coop: '',
@@ -373,10 +388,10 @@ export const data: Data[] = [
     full: false,
     src: false,
     date: '18.09.2020',
-    title: `»Screech of a Sparrow«`,
+    title: `»screech of a Sparrow«`,
     orchestra: 'for clarinet, percussion, soprano, accordion, viola and contrabass',
-    description: 'Delirium Ensemble and polina korobkova',
-    place: 'Französische Kirche, Bern, Switzerland',
+    description: 'delirium Ensemble and polina korobkova',
+    place: 'französische kirche, bern, switzerland',
     link: '',
     photos: [],
     coop: '',
@@ -390,7 +405,7 @@ export const data: Data[] = [
     date: '06.03.2020',
     title: `»trash as material: framing existing objects«`,
     description:'presentation of work and research',
-    place: 'Zurich University of Arts, Zurich, Switzerland',
+    place: 'zurich university of arts, zurich, switzerland',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaN8SSHeMnLl2irsddeefvZxGY38I2j6EY5HpxmvjIm4pfnHmP-e1Obb1QNeAjuBZZDpTL3RFvP3r7g2lSj1avNBHUxk8acm7Y=s1600-rw-v1',
@@ -406,10 +421,10 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '28.02.2020',
-    title: `»anonymous material_i«`,
+    title: `»anonymous material i«`,
     orchestra: 'for chamber orchestra with electric guitar and electric bass instead of string instruments and 3 singers',
     description: 'orkest de ereprijs',
-    place: 'Gigant, Apeldoorn, Netherlands',
+    place: 'gigant, apeldoorn, netherlands',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihY9sLTYF22vmf5yMYFUmDXqwspDBw-NEen9nQq6kQ1ey4YgZK1ix2PVJHPC2Kyd4sGwJ3y5TcgEWfVZG3fiFWvjeU4C2UwuY0I=s1600-rw-v1',
@@ -418,7 +433,7 @@ export const data: Data[] = [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihYqzEAX7TEezgcJ5JCWlSZGE91RfaFDuavGMRxMdQGKNRQlzv62IUe8_xRJRNoaocUp-qjpZlEvYAIlK6h-91fzvxyeYvZ9zg=s1600-rw-v1'
     ],
     audio: [{
-      audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121000/anonymous_material_i_audio-MP3_py1igr.mp3',
+      audio: '/assets/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
       author: 'anonymous material_i',
     }],
     coop: '',
@@ -432,8 +447,8 @@ export const data: Data[] = [
     date: '12.02.2020',
     title: `»flashbacks to perform«`,
     orchestra: 'for solo piano',
-    description: 'Dmitry Batalov',
-    place: 'Sound Museum, St. Petersburg',
+    description: 'dmitry batalov',
+    place: 'sound museum, st. petersburg',
     link: '',
     photos: [],
     coop: '',
@@ -447,8 +462,8 @@ export const data: Data[] = [
     date: '06.02.2020',
     title: `»flashbacks to perform«`,
     orchestra: 'for solo piano',
-    description: 'Dmitry Batalov',
-    place: 'Museum of Scriabin, Moscow',
+    description: 'dmitry batalov',
+    place: 'museum of scriabin, moscow',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihbmGpBjHI2Eag5JhQ41iNrxJQKuPrxqklZmMPg46TPgqPbJX8pmGDJepLjCDLa3bX_DL_mxd_nST3AAJMuX3tHYDbAdFz0V9yE=s1600-rw-v1'
@@ -465,7 +480,7 @@ export const data: Data[] = [
     title: `»implanted memories«`,
     orchestra: 'for automated arciorgano and a female performer',
     description: 'polina korobkova and acriorgano',
-    place: 'Gare du Nord, Basel, Switzerland',
+    place: 'gare du nord, basel, switzerland',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaoqO2Ei2yDDwUlia73tAxnQhCFgYO92oskKjbb7H7aa_F-AD-7B6qPAdvwaYTWI25-ua_oik6uskJZ1fH7LA2RTzCb5_OnsJE=s1600-rw-v1',
@@ -478,7 +493,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121286/implanted_memories_gare_du_nord_audio_1-MP3_r8wz5f.mp3',
+        audio: '/assets/implanted_memories/implanted_memories_gare_du_nord_audio_1-MP3_r8wz5f.mp3',
         author: 'excerpt'
       }
     ],
@@ -491,10 +506,10 @@ export const data: Data[] = [
     full: false,
     src: true,
     date: '20.11.2019',
-    title: `»Porcelain projection #2 [Liebestod]«`,
+    title: `»porcelain projection #2 [Liebestod]«`,
     orchestra: 'for piccolo, cello, self and live electronics',
-    description: 'Tatiana Timonina, Benjamin Coyte, polina korobkova, Mályinkó Lóránt',
-    place: 'AKUT, Konzertmusiksaal, Basel, Switzerland',
+    description: 'tatiana timonina, benjamin coyte, polina korobkova, mályinkó lóránt',
+    place: 'akut, konzertmusiksaal, basel, switzerland',
     link: 'https://www.youtube.com/watch?v=XI4UyZ7-yJE',
     photos: [],
     coop: '',
@@ -506,10 +521,10 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '06.11.2019',
-    title: `»Screech of a Sparrow«`,
+    title: `»screech of a sparrow«`,
     orchestra: 'for clarinet, percussion, soprano, accordion, viola and contrabass',
-    description: 'Delirium Ensemble and polina korobkova',
-    place: 'Musik-Akademie, Basel, Switzerland ',
+    description: 'delirium ensemble and polina korobkova',
+    place: 'musik-akademie, basel, switzerland ',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZ_N55HIEYVbFn4AEh1grsJMaVJl3S_-cTgCIaDCyO_DIERQQ_VT6dPYs0-6NC_Ux5zuF1BkPzSyAOJ69wEamil2q5_IIVfQA=s1600-rw-v1',
@@ -517,7 +532,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121317/screech_of_a_sparrow_audio_1-MP3_ygxrax.mp3',
+        audio: '/assets/screech_of_a_sparrow/screech_of_a_sparrow_audio_1-MP3_ygxrax.mp3',
         author: 'Screech of a Sparrow',
       }
     ],
@@ -530,10 +545,10 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '14.09.2019',
-    title: `»Pocket theatre. Porcelain projection #2 [Liebestod] material.fragment«`,
+    title: `»pocket theatre. porcelain projection #2 [Liebestod] material.fragment«`,
     orchestra: 'for piccolo, cello, self and live electronics',
-    description: 'Ivan Bushuev, Yulia Migunova, Nikolay Khrust',
-    place: 'Philharmonic’s Chamber Music Hall, Moscow',
+    description: 'ivan bushuev, yulia migunova, nikolay khrust',
+    place: 'philharmonic’s chamber music hall, moscow',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihayDMcIfLw5Rj5GCE_nZyeESTmgao2q6gx2Tjf8CV_z2wC-A59l8_xq3g07VlnBUbugctYLS77glHCYrSLcjs60R_8J1LYUWA=s1600-rw-v1',
@@ -542,7 +557,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121304/pocket_theatre_tchaikovsky_audio-MP3_wfstrk.mp3',
+        audio: '/assets/pocket_theatre/pocket_theatre_tchaikovsky_audio-MP3_wfstrk.mp3',
         author: 'fragment',
       }
     ],
@@ -555,10 +570,10 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '01.09.2019',
-    title: `»E-lec-tri-ci-ty: mystical thriller for ears«`,
+    title: `»e-lec-tri-ci-ty: mystical thriller for ears«`,
     orchestra: 'for double string quartet',
-    description: 'Jack Quartet and Mivos Quartet',
-    place: 'Lucerne Festival, KKL, Lucerne, Switzerland',
+    description: 'jack quartet and mivos quartet',
+    place: 'lucerne festival, kkl, lucerne, switzerland',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihYhLm0rqxI0NsnPpgEv18qxVmBKUtaoU0rrHE8nQtbOLdoyhlINDIReXDqrqty9ux6n91-bzmKEpdTNtpa99ZV5s3daIdFwFA=s1600-rw-v1',
@@ -577,7 +592,7 @@ export const data: Data[] = [
     src: false,
     date: '19.08.2019',
     title: `presentation of work and research`,
-    place: 'Lucerne Festival, KKL, Lucerne, Switzerland ',
+    place: 'lucerne festival, kkl, lucerne, switzerland ',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpiharp2oPa14ELSSG-GBWYILLK2Fjf2k2B0wkJxO5sU-LeW525tQTGoMOMnM_2HDiWoy8owzBL6cQTK0FZYT3I5H3cza9vdfgkIA=s1600-rw-v1', 
@@ -596,8 +611,8 @@ export const data: Data[] = [
     date: '07.04.2019',
     title: `»Biy: eternal mantra for three fair maidens«`,
     orchestra: 'for 3 female performers',
-    description: 'Neue Vocalsolisten Stuttgart',
-    place: 'Festival Archipel, Geneva, Switzerland',
+    description: 'neue vocalsolisten stuttgart',
+    place: 'festival archipel, geneva, switzerland',
     link: '',
     photos: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaXp6QLbyIaKNWMIxvUDbTsPDjKlckcO5eSf8r0uIDceXJLm5-R1Qg8V4M2tbgr52fVbfTkLc7qz8_l5smZbs-sbUtML5dhOQ=s1600-rw-v1',

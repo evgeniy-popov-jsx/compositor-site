@@ -32,6 +32,7 @@ const Paragraph = styled.p`
   word-wrap: break-word;
   max-width: 550px;
   font-size: 20px;
+  text-transform: lowercase;
 `;
 const ImageContainer = styled.div`
   display: flex;

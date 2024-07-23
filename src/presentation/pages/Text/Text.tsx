@@ -14,7 +14,10 @@ export const Text: React.FC = () => {
   return (
     <ContentWrapper position={'top'}>
       <NavigateBack link='/texts'/>
-      <Styled.Title>{textData?.title}</Styled.Title>
+      <Styled.Title>
+        {textData?.title}
+        <Styled.Date>{textData?.date}</Styled.Date>
+      </Styled.Title>
       {paragraphs?.map((paragraph, index) => (
         <Styled.Paragraph key={index}>{paragraph}</Styled.Paragraph>
       ))}

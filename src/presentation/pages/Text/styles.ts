@@ -13,6 +13,11 @@ const Paragraph = styled.p`
   max-width: 550px;
   font-size: 20px;
 `;
+const Date = styled.p`
+  margin: 5px 0 0 0;
+  font-size: 20px;
+  color: var(--color-text);
+`;
 const Title = styled.div`
   color: var(--color-accent);
   max-width: 550px;
@@ -21,5 +26,6 @@ const Title = styled.div`
 export const Styled = {
   Link,
   Paragraph,
-  Title
+  Title,
+  Date
 };

@@ -29,7 +29,7 @@ export const data: CompositionData[] = [
     date: '(2019 — … ; work-in-progress)',
     orchestra: 'for an automated arciorgano and a female performer',
     time: 'ca. 60 min.',
-    trackUrl: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121279/implanted_memoreis_audio-MP3_fcbtqy.mp3',
+    trackUrl: '/assets/implanted-memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
     images: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaMiqD-OBlJBUxsLbyPQ1QGWY17vLlXJ5bjMNz4Q6aFNk8G-336yVDY1D3NRVx9QM1Fvd8HfHYFApHwtp78eJUN7xiSh7yTcIU=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihbF3jVTsejbEuE4AJG07dUrS7eJ7tmO5LSEkt2glt6xhB7fwpf07_yOKklt9VhFxIqk43THz71sDYItV-whZfif63kjQPbXvnk=s1600-rw-v1',
@@ -68,7 +68,7 @@ export const data: CompositionData[] = [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihY7LBIgT6jUlArQzDDAwTDypAMyj0STlFCTF2GwHY0RBXu7Ogx1fyy2ERAR_EPIIG367walO0JQo1YBgfH5C4lPUEyVPJYNneA=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihYL7rkeRSgyQCy4kvWwfyFfKMgjb9LPpWdz14AjKMWLZSDsE93mh-lLR_SjtObpeVZQULOZMR8AgUNHf-2B8xCECCDyozUS5A=s1600-rw-v1'
     ],
-    trackUrl: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121238/haunted_place_audio-MP3_xmjide.mp3',
+    trackUrl: '/assets/haunted_place/haunted_place_audio-MP3_xmjide.mp3',
     score: 'https://drive.google.com/file/d/1Q1bvcZEGX7R3UjFKpk95j4_Imh5ajmJy/view?usp=drive_link',
   },
   {
@@ -86,7 +86,7 @@ export const data: CompositionData[] = [
     `,
     videoSrc: 'https://www.youtube.com/embed/QKFeYKAm-5g',
     performed: 'performed by Dmitry Batalov',
-    trackUrl: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121216/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
+    trackUrl: '/assets/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
     images: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihYHBXoh6Dsud8ZBdPLtAJpZQkFBhbmSLNnhHjwSsvIaHphOYbMSXujv1Zq3oxsNHp6aSOorql0Ttr-xKmFPj0pNS3Q3LddzWw=s1600-rw-v1',
     ],
@@ -112,34 +112,35 @@ export const data: CompositionData[] = [
 export const materials: CompositionData[] = [
   {
     id: 5,
-    name: 'anonymous material_i',
+    name: 'anonymous material i',
     slug: 'anonymous-material_i',
     cover: 'https://lh3.googleusercontent.com/drive-viewer/AKGpihYqzEAX7TEezgcJ5JCWlSZGE91RfaFDuavGMRxMdQGKNRQlzv62IUe8_xRJRNoaocUp-qjpZlEvYAIlK6h-91fzvxyeYvZ9zg=s1600-rw-v1',
-    date: '(2020 — … ; work-in-progress)',
-    orchestra: 'series of cuts for various groups of instruments',
-    time: 'ca. 5 min — …',
+    date: '',
+    orchestra: '',
+    time: 'ca. 3 min',
     description: `
-    for chamber orchestra with electric guitar and electric bass instead of string
-    instruments and 3 singers was written for and performed by Orkest De Ereprijs 
+    for chamber orchestra with electric guitar and electric bass instead of string instruments and 3 singers
+    was written for and performed by Orkest De Ereprijs 
     `,
     images: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihY9sLTYF22vmf5yMYFUmDXqwspDBw-NEen9nQq6kQ1ey4YgZK1ix2PVJHPC2Kyd4sGwJ3y5TcgEWfVZG3fiFWvjeU4C2UwuY0I=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZvq-WpcRx2-4MyZpdHxwGTZmkE4njpJrfjr_88nxcajoYWrVLg4TWe7FWdUGPvf2lBvGEM3igFXVdSFRPOliHhLrcb--g2Cb4=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZwUPiBOJBu2tNh8ngPdZag0uR-5iLlN3nJjtqSm1i-N4X3u5QZSVcPtbHL8EDqLBWJ0LWlcjEkD_3lgwBHEJSKLastgICzCxg=s1600-rw-v1',
     ],
-    trackUrl: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121000/anonymous_material_i_audio-MP3_py1igr.mp3',
-    code: 'https://drive.google.com/file/d/13KWAVyZMbSK8Eu5uA4q1KaSpx6b0Mfyu/view?usp=drive_link',
+    trackUrl: '/assets/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
+    score: 'https://drive.google.com/file/d/13KWAVyZMbSK8Eu5uA4q1KaSpx6b0Mfyu/view?usp=drive_link',
   },
   {
     id: 6,
-    name: 'anonymous material_ii',
+    name: 'anonymous material ii',
     slug: 'anonymous-material_ii',
     cover: 'https://lh3.googleusercontent.com/drive-viewer/AKGpihbV3x9s7oWnWfVOVCDPY7QDTXBwPDkbK3-moONjam1bEMbGzxMfQXpWZJwM4T77C85mrLuO_Kr-Pbe8Ull0Mf2eHdqlfGjxOIc=s1600-rw-v1',
-    date: '(2020 — … ; work-in-progress)',
-    orchestra: 'series of cuts for various groups of instruments',
-    time: 'ca. 5 min — …',
+    date: '',
+    orchestra: '',
+    time: 'ca. 2 min',
     description: `
-    for trombone, percussion, viola and cello with fixed electronics was performed by Julian Pfeil, 
+    for trombone, percussion, viola and cello with fixed electronics,
+    was performed by Julian Pfeil 
     Tobias Furholt, Justyna Robak and Sebastian Triebener
     `,
     images: [
@@ -149,8 +150,8 @@ export const materials: CompositionData[] = [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihbDzzAc_OCpvHYajpSO0L7hwQ6p4CoVdXqWvcUJKdqCHwvpWHBU72ltbbTqizz6RqgJnYV9h6Zkv2gL6H2WUGeeWz_bXCk6YA=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZ69tA0jA1BEyRBuX6NZ8jqbydsGP6hTUluurRUixVvbZKTUV_rKoRDxJkl_-d2G2gtSaSNR-0MS4lTntS8K5iUfuS1JyKgm7E=s1600-rw-v1',
     ],
-    trackUrl: 'https://res.cloudinary.com/dhxiz9bul/video/upload/v1721121035/anonymous_material_ii_recording-MP3_pwmoby.mp3',
-    code: 'https://drive.google.com/file/d/182b61Ef1OzAjFURC2r7twV1wRS97kG6b/view?usp=drive_link'
+    trackUrl: '/assets/anonymous_material_ii/anonymous_material_ii_recording-MP3_pwmoby.mp3',
+    score: 'https://drive.google.com/file/d/182b61Ef1OzAjFURC2r7twV1wRS97kG6b/view?usp=drive_link'
   },
 ];
 

@@ -30,6 +30,7 @@ const Paragraph = styled.p`
   word-wrap: break-word;
   max-width: 550px;
   font-size: 20px;
+  text-transform: lowercase;
 `;
 const Link = styled(RLink)`
   display: block;
@@ -41,6 +42,7 @@ const LinkContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  text-transform: lowercase;
 `;
 export const Styled = {
   Image,
