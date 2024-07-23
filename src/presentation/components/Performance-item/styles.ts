@@ -12,7 +12,6 @@ const Link = styled(RLink)`
 const Content = styled.div<{ $active?: boolean }>`
   font-size: 20px;
   color: var(--color-text);
-
   ${({ $active })=> $active && `
     color: var(--color-accent); 
   `}

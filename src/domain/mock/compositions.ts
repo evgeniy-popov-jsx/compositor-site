@@ -29,7 +29,7 @@ export const data: CompositionData[] = [
     date: '(2019 — … ; work-in-progress)',
     orchestra: 'for an automated arciorgano and a female performer',
     time: 'ca. 60 min.',
-    trackUrl: '/assets/implanted-memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
+    trackUrl: 'https://polina-sound.s3.us-east-2.amazonaws.com/implanted+memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
     images: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihaMiqD-OBlJBUxsLbyPQ1QGWY17vLlXJ5bjMNz4Q6aFNk8G-336yVDY1D3NRVx9QM1Fvd8HfHYFApHwtp78eJUN7xiSh7yTcIU=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihbF3jVTsejbEuE4AJG07dUrS7eJ7tmO5LSEkt2glt6xhB7fwpf07_yOKklt9VhFxIqk43THz71sDYItV-whZfif63kjQPbXvnk=s1600-rw-v1',
@@ -68,7 +68,7 @@ export const data: CompositionData[] = [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihY7LBIgT6jUlArQzDDAwTDypAMyj0STlFCTF2GwHY0RBXu7Ogx1fyy2ERAR_EPIIG367walO0JQo1YBgfH5C4lPUEyVPJYNneA=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihYL7rkeRSgyQCy4kvWwfyFfKMgjb9LPpWdz14AjKMWLZSDsE93mh-lLR_SjtObpeVZQULOZMR8AgUNHf-2B8xCECCDyozUS5A=s1600-rw-v1'
     ],
-    trackUrl: '/assets/haunted_place/haunted_place_audio-MP3_xmjide.mp3',
+    trackUrl: 'https://polina-sound.s3.us-east-2.amazonaws.com/haunted_place/haunted_place_audio-MP3_xmjide.mp3',
     score: 'https://drive.google.com/file/d/1Q1bvcZEGX7R3UjFKpk95j4_Imh5ajmJy/view?usp=drive_link',
   },
   {
@@ -86,7 +86,7 @@ export const data: CompositionData[] = [
     `,
     videoSrc: 'https://www.youtube.com/embed/QKFeYKAm-5g',
     performed: 'performed by Dmitry Batalov',
-    trackUrl: '/assets/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
+    trackUrl: 'https://polina-sound.s3.us-east-2.amazonaws.com/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
     images: [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihYHBXoh6Dsud8ZBdPLtAJpZQkFBhbmSLNnhHjwSsvIaHphOYbMSXujv1Zq3oxsNHp6aSOorql0Ttr-xKmFPj0pNS3Q3LddzWw=s1600-rw-v1',
     ],
@@ -127,7 +127,7 @@ export const materials: CompositionData[] = [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZvq-WpcRx2-4MyZpdHxwGTZmkE4njpJrfjr_88nxcajoYWrVLg4TWe7FWdUGPvf2lBvGEM3igFXVdSFRPOliHhLrcb--g2Cb4=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZwUPiBOJBu2tNh8ngPdZag0uR-5iLlN3nJjtqSm1i-N4X3u5QZSVcPtbHL8EDqLBWJ0LWlcjEkD_3lgwBHEJSKLastgICzCxg=s1600-rw-v1',
     ],
-    trackUrl: '/assets/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
+    trackUrl: 'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
     score: 'https://drive.google.com/file/d/13KWAVyZMbSK8Eu5uA4q1KaSpx6b0Mfyu/view?usp=drive_link',
   },
   {
@@ -150,7 +150,7 @@ export const materials: CompositionData[] = [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihbDzzAc_OCpvHYajpSO0L7hwQ6p4CoVdXqWvcUJKdqCHwvpWHBU72ltbbTqizz6RqgJnYV9h6Zkv2gL6H2WUGeeWz_bXCk6YA=s1600-rw-v1',
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihZ69tA0jA1BEyRBuX6NZ8jqbydsGP6hTUluurRUixVvbZKTUV_rKoRDxJkl_-d2G2gtSaSNR-0MS4lTntS8K5iUfuS1JyKgm7E=s1600-rw-v1',
     ],
-    trackUrl: '/assets/anonymous_material_ii/anonymous_material_ii_recording-MP3_pwmoby.mp3',
+    trackUrl: 'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_ii/anonymous_material_ii_recording-MP3_pwmoby.mp3',
     score: 'https://drive.google.com/file/d/182b61Ef1OzAjFURC2r7twV1wRS97kG6b/view?usp=drive_link'
   },
 ];

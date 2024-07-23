@@ -30,6 +30,7 @@ const Paragraph = styled.p`
   hyphens: auto;
   max-width: 550px;
   font-size: 20px;
+  text-transform: lowercase;
 `;
 const ImageContainer = styled.div`
   display: flex;

@@ -272,7 +272,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: '/assets/implanted_memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
+        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/implanted+memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
         author: 'implanted memories',
       }
     ],
@@ -332,11 +332,11 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: '/assets/flashbacks_to_perform/flashbacks_to_perform_audio_aleksandra-MP3_uazgnb.mp3',
+        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/flashbacks_to_perform/flashbacks_to_perform_audio_aleksandra-MP3_uazgnb.mp3',
         author: 'performed by Alexandra Sikorskaya'
       },
       {
-        audio: '/assets/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
+        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
         author: 'performed by polina korobkova'
       }
     ],
@@ -359,7 +359,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: '/assets/Biy_ensemble_content/Biy_ensemble_content_audio-MP3_dpsb3j.mp3',
+        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/Biy_ensemble_content/Biy_ensemble_content_audio-MP3_dpsb3j.mp3',
         author: 'Biy: eternal mantra for three fair maidens'
       },
     ],
@@ -433,7 +433,7 @@ export const data: Data[] = [
       'https://lh3.googleusercontent.com/drive-viewer/AKGpihYqzEAX7TEezgcJ5JCWlSZGE91RfaFDuavGMRxMdQGKNRQlzv62IUe8_xRJRNoaocUp-qjpZlEvYAIlK6h-91fzvxyeYvZ9zg=s1600-rw-v1'
     ],
     audio: [{
-      audio: '/assets/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
+      audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
       author: 'anonymous material_i',
     }],
     coop: '',
@@ -493,7 +493,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: '/assets/implanted_memories/implanted_memories_gare_du_nord_audio_1-MP3_r8wz5f.mp3',
+        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/implanted+memoreis/implanted_memories_gare_du_nord_audio_1-MP3_r8wz5f.mp3',
         author: 'excerpt'
       }
     ],
@@ -532,7 +532,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: '/assets/screech_of_a_sparrow/screech_of_a_sparrow_audio_1-MP3_ygxrax.mp3',
+        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/screech_of_a_sparrow/screech_of_a_sparrow_audio_1-MP3_ygxrax.mp3',
         author: 'Screech of a Sparrow',
       }
     ],
@@ -557,7 +557,7 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: '/assets/pocket_theatre/pocket_theatre_tchaikovsky_audio-MP3_wfstrk.mp3',
+        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/pocket_theatre_tchaikovsky/pocket_theatre_tchaikovsky_audio-MP3_wfstrk.mp3',
         author: 'fragment',
       }
     ],
