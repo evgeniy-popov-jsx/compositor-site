@@ -1,5 +1,5 @@
 export const data = {
-  photo: 'https://lh3.googleusercontent.com/drive-viewer/AKGpihabsnrP3KULcn5_rCd7Hl1FJokrjpn_7gqCyPitNNdDJz1Ti8NhmAXj-Qw6QqYvP0Rlna4sAb_5Ap_iCVJMxlTBkLh51Xz2BA=s1600-rw-v1',
+  photo: 'https://polina-image.s3.us-east-2.amazonaws.com/about_photo_1.jpeg',
   description: `
   We are a composer and a text manufacturer whose practice is situated between two medialities: discursive reflection, registered in texts, and practical experiments, taking place between written scores, live performances, and recorded tracks. Following the testament of Susan Sontag, we emphasize art as an instrument of analysis — linking artistic exploration with theory.
   We usually start working on a piece with reflections on theoretical abstractions, consisting of culturological, philosophical, social, and semiotic problematics. Afterwards, a long process of searching and developing the adequate compositional methods and techniques for the defined theoretical concept follows. That’s the reason why our creating procedure always lasts a while, as for each piece we are trying to re-assemble our relation to writing, ourselves, and the world.

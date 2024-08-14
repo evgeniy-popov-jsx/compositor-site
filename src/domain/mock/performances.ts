@@ -5,10 +5,10 @@ export const data: Data[] = [
     full: false,
     src: false,
     date: '27.09.2024',
-    title: 'bludenzer tage zeitgemäßer musik',
-    orchestra: 'new piece for 2 performers with turntables',
+    title: '»tap my head and mike my brain, stick that needle in my vein«',
+    orchestra: 'for two performers with a similar range, recorded composed correspondence, two produced vinyls, phones and turntables',
     description: 'juliet fraser and hannah weirich',
-    place: 'bludenz, austria',
+    place: 'bludenzer tage zeitgemäßer musik, bludenz, austria',
     link: '',
     desc: '',
   },
@@ -21,18 +21,6 @@ export const data: Data[] = [
     title: '»eight private spaces« for 18 musicians and 26 loudspeakers klangforum wien',
     place: 'wiener konzerthaus, mozart hall, vienna, austria',
     link: 'https://en.klangforum.at/event/strange-bird',
-    desc: '',
-  },
-  {
-    id: 3,
-    upcoming: true,
-    full: false,
-    src: false,
-    date: '10.2024',
-    title: '»haunted place« for string quartet and transducers',
-    description: 'malin grass and tba',
-    place: 'stuttgart, germany',
-    link: '',
     desc: '',
   },
   {
@@ -52,10 +40,10 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '12.2025',
-    title: 'new project for string quartet',
-    description: 'quartetto maurice',
-    orchestra: '',
-    place: 'musica in prossimità 2025, turin, italy',
+    title: 'portrait concert in the framework of ‘forum junger komponist:innen’',
+    description: 'award',
+    orchestra: 'tba',
+    place: 'bayerische akademie der schönen künste, munich, germany',
     link: 'http://www.quartettomaurice.com/it/progetti/new-music-for-four ',
     desc: '',
   },
@@ -66,7 +54,7 @@ export const data: Data[] = [
     src: false,
     date: '02.2026',
     title: '»implanted memories«',
-    orchestra: 'for an automated arciorgano and female performer',
+    orchestra: 'for an automated arciorgano and a female performer',
     description: 'automated arciorgano and Johanna Vargas',
     place: 'ECLAT, Stuttgart, Germany',
     link: '',
@@ -83,8 +71,8 @@ export const data: Data[] = [
     place: 'HMDK, Stuttgart, Germany',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaKDCIjlCGMNRBPvdQY7aWQnSWYGSOHKXRb6vq_U968W_M7k1RDp0dit8G2gWdilv6JDXQ0h1ApEVkgy2_ckc6DwlxdgUyZVZY=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihadu0aPNx8xATDPvh_xe1g4wDPqxhxZoWyf4T6C3-x2fEm81T2vzNnRl-m8LdiZRaCZaCTITkTCNnMznlfTSPqjHmvet5orTlM=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/performative_strategies_of_resistance/strategies_of_resistance_photo_1.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/performative_strategies_of_resistance/strategies_of_resistance_photo_2.JPG',
     ],
     desc: '',
   },
@@ -99,22 +87,6 @@ export const data: Data[] = [
     place: 'hamburg university, hamburg, germany',
     link: 'https://www.kulturwissenschaften.uni-hamburg.de/hm/uber-das-institut/aktuelles/2024-02-29-studientag-luigi-nono/flyer-nono-studientag.pdf',
     photos: [],
-    desc: '',
-  },
-  {
-    id: 8,
-    upcoming: false,
-    full: true,
-    src: false,
-    date: '25.02.2024',
-    title: '»private spaces. concert version«',
-    description: 'ensemble modern',
-    place: 'cresc… biennale for contemporary music, lab, frankfurt am main, germany',
-    link: '',
-    photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaXIW073y7h6Y9xyDZXY3MsjEb615PaXeWCTtrFECX5g1zpUoGfU2w8WaJf8RFwr4OmXUzCKSYBnM-VPllY-znqwkdAozq2Ohw=s1600-rw-v1'
-    ],
-    coop: '© cresc… 2024, wonge bergmann',
     desc: '',
   },
   {
@@ -156,7 +128,7 @@ export const data: Data[] = [
     place: 'voices festival. radialsystem, berlin, germany',
     link: 'https://voices-program.com/e2023/cro',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZdyXIL0KcgJ2NxQDDypkHVAResdu-6SWzVkDBFPMiW2Pcxe8IN6PZDWa3utHcGSm1k96igbSsugibttmVuhUi16-ak1h9eOOY=s1600-rw-v1'
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/crossing_borders/crossing_borders_photo_1.jpg'
     ],
     coop: '',
     desc: '',
@@ -201,14 +173,14 @@ export const data: Data[] = [
     place: 'munich biennale for new music theatre. luftschutzbunker, basement of HMTM, Munich, Germany',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbiLi8RE8bqQZPg6uDMkiQ7Mo44m_t3Ax722gtOXLRbeRsp_9bQZAuwZo_xf_hHbAjb45UR6HQbrXYUrMnAiaedzeuX8z9voPU=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbnlhqgX2O8yzVGUaprtQbykqAEeZPUSU3HF78N_E2rNTOLC9yqvLWfUxUF00aEURVAUkX0SRLUaXIcGzi8Yrsq0X6u-Dw0TPQ=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZEo2GGglF4u9ABlKGmmOJv1EWuRS_FQXkSV8XDgdz0ZfM-2jesVfnozqU7TNIZ8weZO7k6M_HMgoW-1jBTtBkMhcuMFnJhag=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZBe-FJZyVrGl9x8UWKQmsA6Rd8z-QIODVj9fdGLpIj4-TcFtQRbJR9m8h0BjCZ0WFH6_3n62tBMyQMfR7GgQafeSpTQ661gLA=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihYOPVU-_hrld0DyDdi7lMBKBYDYLZUAxbV-5q1GvnmqOcr7sDVo8x8wIlFpnQGZ8leQz4CXpjl4X4UhKRdqr2AeB6oHOyXzTRU=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZf0gmARWludlVG1MpnqpewBs-dHV7HT2aLdqtZhjvx8O340kGrkA2QNvoEBiQcoI2e43rcK9oJesw8JYjEpF5LwSV6yZhXbg=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/S+P+U+R+E+N/SPUREN_photo_1.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/S+P+U+R+E+N/SPUREN_photo_2.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/S+P+U+R+E+N/SPUREN_photo_3.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/S+P+U+R+E+N/SPUREN_photo_4.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/S+P+U+R+E+N/SPUREN_photo_5.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/S+P+U+R+E+N/SPUREN_photo_6.jpg',
     ],
-    map: 'https://lh3.googleusercontent.com/drive-viewer/AKGpiha56Mr2uXzxQZaEu0DiLZzjruzlkXn5O-w6OXD65kXjFQP0if_Gz0pibrTPnYLJkaup8KhSl0xH9s1y9ub_2EyBvvg3It3QnOE=s1600-rw-v1',
+    map: 'https://polina-image.s3.us-east-2.amazonaws.com/performances/S+P+U+R+E+N/SPUREN_map.jpg',
     desc: `
     press:
 
@@ -259,16 +231,16 @@ export const data: Data[] = [
     full: true,
     src: false,
     date: '11.12.2021',
-    title: `»implanted memories« and acriorgano`,
+    title: `»implanted memories«`,
     orchestra: 'for automated arciorgano and a female performer',
     description: 'polina korobkova and acriorgano',
     place: 'kunstraum walcheturm, zurich, switzerland',
     link: 'https://www.walcheturm.ch/archive/ignm-konzert-fast-forward-ii-ein-abend-durchgehender-musik ',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpiha41GWOH5d06tos_hYmG-Rq1dCsNbgQwXt5udy8ABlasxTQmR6USw9Qz1Eg6W5sfzgC_-GCyXv9gWxaOoNUNOSlsooF25Q2fg=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbI_XNc8dPT2cWxFJifHb1kZt7MQdMTRmKD4bioYgpOgQwIDcl6QOTUgsVZ7qSsTH0z8UkaXnQFIfJ1pX9CE7a25NOwG_vof8w=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihYX1iSMIv2jeaOYa3CM6ZmM1hPQpoGATEm7xMf6h6JoZ6g5tWNFg7wIyqLEUKgg6WbK2fJ8Opv70lWR41NCe5CoR4IEdZSe8g=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaz3MPvsBx9e7rppvxXPZIwfzttONrgHyT5LoMhBUDxI5eKRWOn8WEu3GaKn_PsAiACinAyVASPTPclKM19KkM0wwvJry-7G8s=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_walcheturm/implanted_memories_walcheturm_photo_1.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_walcheturm/implanted_memories_walcheturm_photo_2.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_walcheturm/implanted_memories_walcheturm_photo_3.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_walcheturm/implanted_memories_walcheturm_photo_4.jpg',
     ],
     audio: [
       {
@@ -291,9 +263,9 @@ export const data: Data[] = [
     place: 'bludenzer tage zeitgemäßer musik, bludenz, austria',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaQ6AhBv4mq2j1suVZoiuXUjlfSmCcRBnpWIEY_wJiGo3Q75aZ5PK_BbIRny8o4FNVrO4u2PexDB0OQkFwJPnlIPlW7K8XxsjY=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbyNzH-NpO2-gC8FUlAZ71eUCV69MtQ1tXiNyc95moTanezD0TA8wQ4J74iJ-5Y8baO_Kx22vGlVEyXxpmSdMp8WxCJyJ8xsd4=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbXhpjnvO8eDy1PWD6I_0X4afCDmz4FY-fE6Lo2Qx8hawdboS525QgAs6uvkV5u37PBlkoTjGoCAUafjXErVcY-v-G_GhLUhg=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/haunted+place_bludenz/haunted_place_bludenz_photo_1.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/haunted+place_bludenz/haunted_place_bludenz_photo_2.jpg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/haunted+place_bludenz/haunted_place_bludenz_photo_3.JPG',
     ],
     coop: '',
     desc: '',
@@ -311,7 +283,7 @@ export const data: Data[] = [
     place: 'sala donatoni of the fabbrica del vapore, milano, italy',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaaQHeXegnj_OY5noEQIS2MSzqBnqFb8-SesWu_dlpPhYMvirsz4ZBBxdGZoEBmf1PCx3K6gjzMFkLM9RFB4X7HOahOfE_4Ltw=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/Pocket_theatre_Milano/Pocket_theatre_Milano_photo_1.JPG',
     ],
     coop: '',
     desc: '',
@@ -328,7 +300,7 @@ export const data: Data[] = [
     place: 'lange nacht, zurich university of art, zurich, switzerland',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbPzwwyjTQibo18Wzo2VXR9ezhio7XW3aKKyr7lQoXlOZHW6Rss2Eqi-AfIpZimwkPuhkayunEj4kj31ZzgDkkzD5rQNgDK8vY=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/flashbacks_to_perform_lange_nacht/flashbacks_to_perform_zhdk_photo.jpeg',
     ],
     audio: [
       {
@@ -355,7 +327,7 @@ export const data: Data[] = [
     place: 'diaghilev festival, perm',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaMnaKC2fS8AJKV_YA4D2U2dUsTnrgKzfNi5z9aM1bBtkrg7BpBm5xr1TNRQUrJlbX02g1phAFnJM3kVoLhbZ_rSUdnkYdh2w=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/Biy_content/biy_content_photo_1.jpg',
     ],
     audio: [
       {
@@ -408,9 +380,9 @@ export const data: Data[] = [
     place: 'zurich university of arts, zurich, switzerland',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaN8SSHeMnLl2irsddeefvZxGY38I2j6EY5HpxmvjIm4pfnHmP-e1Obb1QNeAjuBZZDpTL3RFvP3r7g2lSj1avNBHUxk8acm7Y=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbmDZoE4VXrG-b5lxKRHfUN-N6Eh_-ogb3pcwayXRTLsIE-Ef3eepoBXCOBweK5P8kS-TzUXWb2swUU_2YXrTf8mda9Nfiy0hs=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbliDgXDFDaQAsTDBHUzx4VPjwPpJHDwBgEQTpFGSh3UppA2_CoJzirDP5_iDVqj_qpA45SBdr3Ag1xSYLtvFLSmtz5opRgjQ=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/trash_as_material/trash_as_material_photo_1.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/trash_as_material/trash_as_material_photo_2.JPG',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/trash_as_material/trash_as_material_photo_3.JPG',
     ],
     coop: '',
     desc: '',
@@ -427,10 +399,10 @@ export const data: Data[] = [
     place: 'gigant, apeldoorn, netherlands',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihY9sLTYF22vmf5yMYFUmDXqwspDBw-NEen9nQq6kQ1ey4YgZK1ix2PVJHPC2Kyd4sGwJ3y5TcgEWfVZG3fiFWvjeU4C2UwuY0I=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZvq-WpcRx2-4MyZpdHxwGTZmkE4njpJrfjr_88nxcajoYWrVLg4TWe7FWdUGPvf2lBvGEM3igFXVdSFRPOliHhLrcb--g2Cb4=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZwUPiBOJBu2tNh8ngPdZag0uR-5iLlN3nJjtqSm1i-N4X3u5QZSVcPtbHL8EDqLBWJ0LWlcjEkD_3lgwBHEJSKLastgICzCxg=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihYqzEAX7TEezgcJ5JCWlSZGE91RfaFDuavGMRxMdQGKNRQlzv62IUe8_xRJRNoaocUp-qjpZlEvYAIlK6h-91fzvxyeYvZ9zg=s1600-rw-v1'
+      'https://polina-image.s3.us-east-2.amazonaws.com/compositions/anonymous+materials/anonymous+material+i/anonymous_material_i_cover.png',
+      'https://polina-image.s3.us-east-2.amazonaws.com/compositions/anonymous+materials/anonymous+material+i/anonymous_material_i_photo_1.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/compositions/anonymous+materials/anonymous+material+i/anonymous_material_i_photo_2.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/compositions/anonymous+materials/anonymous+material+i/anonymous_material_i_photo_3.jpeg',
     ],
     audio: [{
       audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
@@ -466,7 +438,7 @@ export const data: Data[] = [
     place: 'museum of scriabin, moscow',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbmGpBjHI2Eag5JhQ41iNrxJQKuPrxqklZmMPg46TPgqPbJX8pmGDJepLjCDLa3bX_DL_mxd_nST3AAJMuX3tHYDbAdFz0V9yE=s1600-rw-v1'
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/flashbacks_to_perform_museum_of_scriabin/flashbacks_to_perform_museum_of_scriabin_photo_1.jpeg'
     ],
     coop: '',
     desc: '',
@@ -483,13 +455,13 @@ export const data: Data[] = [
     place: 'gare du nord, basel, switzerland',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaoqO2Ei2yDDwUlia73tAxnQhCFgYO92oskKjbb7H7aa_F-AD-7B6qPAdvwaYTWI25-ua_oik6uskJZ1fH7LA2RTzCb5_OnsJE=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZjCwGPcyLRwNLVReA0IhZOl0BJItiUp461K0S8lmi5Kv5jAU6nE3QPx64qdO4Q_ndxFKdvr3SSYblGRAbmdT2csIUtRhtYdP0=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbxdAuBISqZ1DDBLodmsXPlw3MsZ3ltmN_drmLNyWVts4PdJSPmylGyVhwbSdxbU_fpFjX01rNuqxD5WyTOoFMUsn1D-pusBw=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbSDFCedhk56-l_twlvGrc_Ln4_Ov2-rlXQ1V-8l0qXpDRR7oQ5V-fCMewm2mEaL1RQVL6XN5J1KoMsVs0pJhJieZbvtWIiNuI=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihYhju9YhUR2NacCJaf47eV2JiQx5LJ9uiJ3LVTmnfaEVxGG6ffXWcVI6gMqhGIGntMjjVpyXD5fuTQIA2RlO58b-RFOhXSu-pA=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpiha2msVOjY9IS12E2VrI7mcq2e9_17w5Qq4Qoq-zlX1LHZSRl97QIZPepr7Qx4hrfx0mVNmPdaR5tFGKYHPQrcaZUAywExW0vPM=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbMRUWG8DWxpsIKwbAa-7w_PKUuOpFcCdtdcC2mlkE0xGKLgGtYbNTGsHvu0mgfrz4i-mZEz5jdq2aAMvTAtwHjnaIz20LWNxU=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_gare_du_nord/implanted_memories_gare_du_nord_photo_1.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_gare_du_nord/implanted_memories_gare_du_nord_photo_2.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_gare_du_nord/implanted_memories_gare_du_nord_photo_3.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_gare_du_nord/implanted_memories_gare_du_nord_photo_4.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_gare_du_nord/implanted_memories_gare_du_nord_photo_5.JPG',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_gare_du_nord/implanted_memories_gare_du_nord_photo_6.JPG',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/implanted_memories_gare_du_nord/implanted_memories_gare_du_nord_photo_7.jpg',
     ],
     audio: [
       {
@@ -527,8 +499,8 @@ export const data: Data[] = [
     place: 'musik-akademie, basel, switzerland ',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZ_N55HIEYVbFn4AEh1grsJMaVJl3S_-cTgCIaDCyO_DIERQQ_VT6dPYs0-6NC_Ux5zuF1BkPzSyAOJ69wEamil2q5_IIVfQA=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZB6ENrmNuIqQqrP2gg_49AGph-Yi5cwtFd1Whz9HADK3A9Y4RQF4GdFjiffF-uUSQuL1tdNLcLnLlqQ72pXWwAF57a-ZfUjQ=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/screech_of_a_sparrow.+basel/screech_of_a_sparrow_photo_1.JPG',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/screech_of_a_sparrow.+basel/screech_of_a_sparrow_photo_2.JPG',
     ],
     audio: [
       {
@@ -551,9 +523,9 @@ export const data: Data[] = [
     place: 'philharmonic’s chamber music hall, moscow',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihayDMcIfLw5Rj5GCE_nZyeESTmgao2q6gx2Tjf8CV_z2wC-A59l8_xq3g07VlnBUbugctYLS77glHCYrSLcjs60R_8J1LYUWA=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbCxJj-XEMr-GEN-pn-m2mOTnpOwzsHmsSBiFRq2s4mGhps4rshwRQc_AjKJ5fZ__KjrOVAJOm49H_a9puyEoTC15lYbX1EFMc=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaTNVi85EMTOqfjx3lsSX8DSBVBpSxwvFtPsvdHYk8px-_3YZqRBhfqa_08Yrwceqsng4UkW1eOsfC5AjEYxHg6pCSwm1wf1w=s1600-rw-v1'
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/pocket_theatre_tchaikovsky/pocket_theatre_tchaikovsky_photo_1.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/pocket_theatre_tchaikovsky/pocket_theatre_tchaikovsky_photo_2.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/pocket_theatre_tchaikovsky/pocket_theatre_tchaikovsky_photo_3.JPG'
     ],
     audio: [
       {
@@ -576,11 +548,11 @@ export const data: Data[] = [
     place: 'lucerne festival, kkl, lucerne, switzerland',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihYhLm0rqxI0NsnPpgEv18qxVmBKUtaoU0rrHE8nQtbOLdoyhlINDIReXDqrqty9ux6n91-bzmKEpdTNtpa99ZV5s3daIdFwFA=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihY07zHyRDFPIlxQzZggrUaDudM3TCsuogwEXkHzTR9hhcJ6vy_KJ3oD6t5cRA7a_kHW6MZ4xpSXeW9KzZYnE7iBhfWu_bRtEQ=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaANVMDgCNhjv-A926xhPA0qdzEBDUraKb-bCRtZ8wVSSUV-ADQlkB16Z7ja8FtKuJROa8kJ7Pqli4pP-XM_-XzIApbLHMk-ck=s2560', 
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihb6pI-ILY0nKoHHJj_ZpV-HHpys-xGZ97RuL7f8M3o1Ryq0gDbMzLmgD-m2Nh4t0JEnDJE2gALxEeL49yahvKII9G-gmo6wSYU=s2560', 
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbRLqEPQ2No-pZzccY0oIFjvdkuJw6IGmZqD-pvXelWQ70d-1BGZ920NHZoj9VXt91XGdUbn3xJmBfglWQCBD8XDGGRy_l7-CU=s2560', 
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/electricity/electricity_photo_1.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/electricity/electricity_photo_2.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/electricity/electricity_photo_3.JPG', 
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/electricity/electricity_photo_4.JPG', 
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/electricity/electricity_photo_5.jpg', 
     ],
     coop: '',
     desc: '',
@@ -595,10 +567,10 @@ export const data: Data[] = [
     place: 'lucerne festival, kkl, lucerne, switzerland ',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpiharp2oPa14ELSSG-GBWYILLK2Fjf2k2B0wkJxO5sU-LeW525tQTGoMOMnM_2HDiWoy8owzBL6cQTK0FZYT3I5H3cza9vdfgkIA=s1600-rw-v1', 
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaLc2FOBc352eg43nssDlk5UlcS6L6cdPVk_QfYYpfsvavqaUUOxmMcejCWde3JFfMkS6Op-_gyC5gaHEu4UbXtjP-uOt1FUvM=s1600-rw-v1', 
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihagUp1BhH_7Z5AvrwY6IAeB7QyhP6Wb3q84vLTl8t563bwUPRkFbIFVpENNOJe5gABmWSa7iLLQ_8PGnvzeDL0eM7--LsmgPvw=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihZHjqVjjxIsoHZEuZIfmIxEhDa3_xpRf79VSCkvHVHHJZFNG90SHp0bqxkbX0SQSnN4uPpWHHOv0KXsmPPgRnHnKVUNDC4qmG4=s1600-rw-v1',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/lucerne_presentation/lucerne_presentation_photo_1.JPG',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/lucerne_presentation/lucerne_presentation_photo_2.JPG',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/lucerne_presentation/lucerne_presentation_photo_3.JPG',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/lucerne_presentation/lucerne_presentation_photo_4.JPG',
     ],
     coop: '',
     desc: '',
@@ -615,10 +587,10 @@ export const data: Data[] = [
     place: 'festival archipel, geneva, switzerland',
     link: '',
     photos: [
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihaXp6QLbyIaKNWMIxvUDbTsPDjKlckcO5eSf8r0uIDceXJLm5-R1Qg8V4M2tbgr52fVbfTkLc7qz8_l5smZbs-sbUtML5dhOQ=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihadPSPMFmHrqqRjf-36GLYEds5VXNQwNpPPe7dSX1JCv33v8aXH5C8M639kqC6tgzKR5nfQklffhRRnSRZefg9l8g-8QFbgvTQ=s1600-rw-v1',
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihbMvC1qLOnCWj_CCR4M9guJdCeEIe0PDFwvo2tqweLBVB4_ILvcRthv3GDpsxfChG9xjWXj8tPPoIBdEgMAwaH7_Wq2NAnagw=s2560', 
-      'https://lh3.googleusercontent.com/drive-viewer/AKGpihYKMsd07iK-HDChWj10_iY0Ft8A7Nkc24NhPcue_w-4sZkJBciTZQkOzvis1P86VF3eoKhE_xmdyIOHGJOdNOWqr-WHH4dHxdk=s1600-rw-v1', 
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/Biy_Geneva/biy_geneva_photo_1.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/Biy_Geneva/biy_geneva_photo_2.jpeg',
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/Biy_Geneva/biy_geneva_photo_3.jpg', 
+      'https://polina-image.s3.us-east-2.amazonaws.com/performances/Biy_Geneva/biy_geneva_photo_4.jpg', 
     ],
     coop: '',
     desc: '',
