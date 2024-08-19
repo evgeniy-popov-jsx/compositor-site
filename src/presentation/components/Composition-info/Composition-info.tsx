@@ -12,7 +12,14 @@ export const CompositionInfo: React.FC<prop> = ({ data }) => {
       <Styled.Content>{data.name}</Styled.Content>
       <Styled.Content>{data.date}</Styled.Content>
       <Styled.Content>{data.orchestra}</Styled.Content>
-      <Styled.Content>{data.time}</Styled.Content>
+      <Styled.Content>
+        {data.time.split('<br>').map((part, index) => (
+          <span key={index}>
+            {part}
+            {index < data.time.split('<br>').length - 1 && <br />}
+          </span>
+        ))}
+      </Styled.Content>
     </Styled.Container>
   );
 };

@@ -3,7 +3,7 @@ import ReactHowler from 'react-howler';
 import DurationDisplay from 'presentation/components/Duration-display/Duration-display';
 import { Styled } from './styles';
 
-const AudioPlayer: React.FC<{ src: string, trackName: string }> = ({ src, trackName }) => {
+const AudioPlayer: React.FC<{ src: string, trackName: string, play?: boolean }> = ({ src, trackName, play }) => {
     const [playing, setPlaying] = useState(false);
     const [loadState, setLoadState] = useState('unloaded');
     const [volume, setVolume] = useState(0.5);
@@ -12,7 +12,7 @@ const AudioPlayer: React.FC<{ src: string, trackName: string }> = ({ src, trackN
     const [currentTime, setCurrentTime] = useState(0);
     const [isSeeking, setIsSeeking] = useState(false);
     const playerRef = useRef<ReactHowler>(null);
-    
+ 
     useEffect(() => {
         const updateSeek = () => {
             if (playerRef.current && playing && !isSeeking) {
@@ -25,6 +25,10 @@ const AudioPlayer: React.FC<{ src: string, trackName: string }> = ({ src, trackN
         const intervalId = setInterval(updateSeek, 1000);
         return () => clearInterval(intervalId);
     }, [playing, isSeeking, duration]);
+
+    useEffect(() => {
+      setPlaying(false);
+    }, [play]);
 
     const handleTogglePlay = () => {
         setPlaying(!playing);

@@ -6,6 +6,7 @@ import { data } from 'domain/mock/compositions';
 import { Styled } from './styles';
 import { NavigateBack } from 'presentation/components/Navigate-back/Navigate-back';
 import AudioPlayer from 'presentation/components/Audio-player/Audio-player';
+import { Loader } from 'presentation/components/Loader/Loader';
 
 export const CompositionPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,6 +29,7 @@ export const CompositionPage: React.FC = () => {
         width={'180px'}
         height={'180px'}
         preview={PreviewType}
+        placeholder={<Loader />}
         alt='polina korobkova'>
       </Styled.Image>
       {compositionData && <CompositionInfo data={compositionData} />}
@@ -47,6 +49,7 @@ export const CompositionPage: React.FC = () => {
                 width={'180px'}
                 height={'180px'}
                 preview={PreviewType}
+                placeholder={<Loader />}
                 alt='polina korobkova'>
               </Styled.Image>
             )
@@ -80,7 +83,8 @@ export const CompositionPage: React.FC = () => {
       {compositionData?.trackUrl && 
         <Styled.PlayerContainer>
           <AudioPlayer src={compositionData.trackUrl} trackName={compositionData.name}/>
-        </Styled.PlayerContainer>}
+        </Styled.PlayerContainer>
+        }
     </ContentWrapper>
   );
 };

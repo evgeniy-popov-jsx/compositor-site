@@ -10,6 +10,7 @@ const Link = styled(RLink)`
 `;
 const Content = styled.div`
   font-size: 20px;
+  max-width: 550px;
   color: var(--color-text);
 
   &:nth-child(1){

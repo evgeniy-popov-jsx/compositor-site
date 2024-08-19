@@ -2,6 +2,7 @@ import React from 'react';
 import { data } from 'domain/mock/about';
 import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-wrapper';
 import { Styled } from './styles';
+import { Loader } from 'presentation/components/Loader/Loader';
 
 export const About: React.FC = () => {
   const { photo, description, cv } = data;
@@ -23,7 +24,9 @@ export const About: React.FC = () => {
         width={'180px'}
         height={'180px'}
         preview={PreviewType}
-        alt='polina korobkova'>
+        placeholder={<Loader />}
+        alt='polina korobkova'
+      >
       </Styled.Image>
       {paragraphs.map((paragraph, index) => (
         <Styled.Paragraph key={index}>{paragraph}</Styled.Paragraph>

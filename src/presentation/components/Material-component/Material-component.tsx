@@ -6,6 +6,7 @@ import { materials } from 'domain/mock/compositions';
 import { Styled } from './styles';
 import { NavigateBack } from 'presentation/components/Navigate-back/Navigate-back';
 import AudioPlayer from 'presentation/components/Audio-player/Audio-player';
+import { Loader } from '../Loader/Loader';
 
 export const MaterialComponent: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,11 +29,16 @@ export const MaterialComponent: React.FC = () => {
         width={'180px'}
         height={'180px'}
         preview={PreviewType}
+        placeholder={<Loader />}
         alt='polina korobkova'>
       </Styled.Image>
       {compositionData && <CompositionInfo data={compositionData} />}
       {paragraphs?.map((paragraph, index) => (
-        <Styled.Paragraph key={index}>{paragraph}</Styled.Paragraph>
+        <Styled.Paragraph key={index}>
+          {paragraph}
+          <br></br>
+          {compositionData?.srcLink && <Styled.Link to={compositionData.srcLink} target="_blank" rel="noopener noreferrer">{compositionData.srcTitle}</Styled.Link>}
+        </Styled.Paragraph>
       ))}
       <Styled.ImageContainer>
         <Styled.Image.PreviewGroup
@@ -47,6 +53,7 @@ export const MaterialComponent: React.FC = () => {
                 width={'180px'}
                 height={'180px'}
                 preview={PreviewType}
+                placeholder={<Loader />}
                 alt='polina korobkova'>
               </Styled.Image>
             )

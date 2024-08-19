@@ -5,10 +5,11 @@ import { data } from 'domain/mock/performances';
 import { Styled } from './styles';
 import { NavigateBack } from 'presentation/components/Navigate-back/Navigate-back';
 import AudioPlayer from 'presentation/components/Audio-player/Audio-player';
+import { Loader } from 'presentation/components/Loader/Loader';
 
 export const Performance: React.FC = () => {
   const { id } = useParams<{ id: string}>();
-  const [ audioState, setAudioState ] = useState<boolean>(false);
+  const [audioState, setAudioState] = useState<boolean>(false);
   const performanceData = data.find(item => item.id === Number(id));
   const paragraphs = performanceData?.desc?.trim().split('\n').filter(paragraph => paragraph.length > 0);
 
@@ -60,6 +61,7 @@ export const Performance: React.FC = () => {
                 width={'180px'}
                 height={'180px'}
                 preview={PreviewType}
+                placeholder={<Loader />}
                 alt='polina korobkova'>
               </Styled.Image>
             )
@@ -98,7 +100,12 @@ export const Performance: React.FC = () => {
           )}
           {performanceData?.audio.map((item)=>{
             return (
-              <AudioPlayer src={item.audio} trackName={item.author} key={item.author}/>
+              <AudioPlayer
+                src={item.audio} 
+                trackName={item.author} 
+                key={item.author}
+                play={audioState}
+              />
             );
           })}
         </Styled.PlayerContainer>}

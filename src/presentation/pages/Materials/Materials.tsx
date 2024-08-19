@@ -4,6 +4,7 @@ import { CompositionInfo } from 'presentation/components/Composition-info/Compos
 import { data } from 'domain/mock/compositions';
 import { NavigateBack } from 'presentation/components/Navigate-back/Navigate-back';
 import { Styled } from './styles';
+import { Loader } from 'presentation/components/Loader/Loader';
 
 export const Materials: React.FC = () => {
   const id  = 'anonymous-materials';
@@ -26,6 +27,7 @@ export const Materials: React.FC = () => {
         width={'180px'}
         height={'180px'}
         preview={PreviewType}
+        placeholder={<Loader />}
         alt='polina korobkova'>
       </Styled.Image>
       {compositionData && <CompositionInfo data={compositionData} />}

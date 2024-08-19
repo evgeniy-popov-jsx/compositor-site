@@ -1,6 +1,6 @@
 export const data = {
-  photo: 'https://polina-image.s3.us-east-2.amazonaws.com/collaboration_photo_1.jpg',
-  collaborationImg: 'https://polina-image.s3.us-east-2.amazonaws.com/collaboration_photo_2.jpg',
+  photo: 'https://polina-image.s3.us-east-2.amazonaws.com/convert/collaboration_photo_1.webp',
+  collaborationImg: 'https://polina-image.s3.us-east-2.amazonaws.com/convert/collaboration_photo_2.webp',
   description: `
   on collaborating with us
   we treasure composing as a way of thinking and structuring. it is therefore not necessarily linked to sounds. we aim for unidentifiable occurrences which are in-between various mediums, genres and forms.    

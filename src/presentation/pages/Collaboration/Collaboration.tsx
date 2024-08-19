@@ -2,6 +2,7 @@ import React from 'react';
 import { data } from 'domain/mock/collobaration';
 import { Styled } from './styles';
 import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-wrapper';
+import { Loader } from 'presentation/components/Loader/Loader';
 
 export const Collaboration: React.FC = () => {
   const { 
@@ -28,6 +29,7 @@ export const Collaboration: React.FC = () => {
         width={'180px'}
         height={'180px'}
         preview={PreviewType}
+        placeholder={<Loader />}
         alt='polina korobkova'>
       </Styled.Image>
       {paragraphs.map((paragraph, index) => (
@@ -41,6 +43,7 @@ export const Collaboration: React.FC = () => {
         className="custom-preview"
         src={collaborationImg}
         preview={PreviewType}
+        placeholder={<Loader />}
         alt='polina korobkova'>
       </Styled.Image>
       <Styled.Paragraph>{collaborationName}</Styled.Paragraph>
