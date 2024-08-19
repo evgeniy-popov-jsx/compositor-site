@@ -78,7 +78,7 @@ export const data: Data[] = [
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/strategies_of_resistance_photo_1.webp',
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/strategies_of_resistance_photo_2.webp',
     ],
-    videoSrc: 'https://www.youtube.com/watch?feature=shared&v=rzS7y3OfJ6I',
+    videoSrc: 'https://www.youtube.com/embed/rzS7y3OfJ6I',
     desc: '',
   },
   {
