@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-
+  margin-top: 20px;
   @media (max-width: 670px) {
     grid-column: 1;
   }

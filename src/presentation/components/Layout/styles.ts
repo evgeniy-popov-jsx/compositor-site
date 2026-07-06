@@ -26,7 +26,7 @@ const Header = styled.div`
   background-color: var(--color-background);
 
   @media (max-width: 670px) {
-    height: 130px;
+    height: 135px;
   }
 `;
 const Content = styled.div`
@@ -56,10 +56,12 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `;
+
 const Link = styled(RLink)`
   color: var(--color-accent);
   font-size: 30px;
   height: min-content;
+  margin-top: 12px;
   margin-bottom: 5px;
   text-decoration: none;
   &:hover {
@@ -70,6 +72,13 @@ const Link = styled(RLink)`
 const SubLink = styled.div`
   font-size: 20px;
   line-height: 25px;
+
+  @media (max-width: 490px) {
+    max-width: 300px;
+  }
+  @media (max-width: 360px) {
+    max-width: 200px;
+  }
 `;
 
 export const Styled = {
