@@ -13,8 +13,10 @@ const Link = styled(RLink)<{ $isActive: boolean }>`
   position: relative;
   font-size: 20px;
   color: var(--color-text);
-
-  ${({ $isActive })=> $isActive && `
+  text-decoration: none;
+  ${({ $isActive }) =>
+    $isActive &&
+    `
     color: var(--color-accent);
 
     &::before {
@@ -34,7 +36,6 @@ const Link = styled(RLink)<{ $isActive: boolean }>`
   &:hover {
     color: var(--color-accent);
   }
-
 `;
 
 export const Styled = {
