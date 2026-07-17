@@ -12,6 +12,7 @@ const Container = styled.div`
 const Link = styled(RLink)<{ $isActive: boolean }>`
   position: relative;
   font-size: 20px;
+  font-family: 'Syne Mono', monospace;
   color: var(--color-text);
   text-decoration: none;
   ${({ $isActive }) =>

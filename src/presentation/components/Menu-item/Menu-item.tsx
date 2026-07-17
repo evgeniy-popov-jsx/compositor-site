@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom';
 import { Styled } from './styles';
-// import { Animation } from '../Animation/Animation';
 // import { useState } from 'react';
 import { Setting } from '../Animation/interface';
 

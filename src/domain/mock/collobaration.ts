@@ -1,23 +1,42 @@
 export const data = {
-  photo: 'https://polina-image.s3.us-east-2.amazonaws.com/convert/collaboration_photo_1.webp',
-  collaborationImg: 'https://polina-image.s3.us-east-2.amazonaws.com/convert/collaboration_photo_2.webp',
-  description: `
-  on collaborating with us
-  we treasure composing as a way of thinking and structuring. it is therefore not necessarily linked to sounds. we aim for unidentifiable occurrences which are in-between various mediums, genres and forms.    
-  we are not efficient, not formatted and not functional. we have zero interest in contemporary music as genre.
-  each of our projects brings us to an unknown territory and we can never be sure what the final result will be. please don’t expect from us to reproduce what we have already done - it won’t be possible. we understand experimental art as a risky activity, which contains a possibility of failure. we consider it of value  — not of disadvantage. 
-  it’s important for us to work with people in all their complexity and inconsistency. we see performers as co-collaborators and consider not merely musical qualities, but also personalities, physical representations and intimate experiences.
-  a lot of our pieces can be tricky to realise as we ask for special skills, performative actions and unusual equipment. we are sceptical of the concert hall format and want to bring our performances to the streets, to different places, to different beings. 
-  if you are interested in challenges and fascinated by the glow of the unknown as we are — please, reach out to us! we’re always open to new friends, ideas and proposals. 
-  `,
-  contact: 'p.korobkova@gmail.com',
-  collaborationName: '© zhdk, regula bearth',
+  photo1: '/photoCollaboration_1.png',
+  photo2: '/photoCollaboration_2.png',
+  contact: 'linkorobkova@gmail.com',
+  sections: [
+    {
+      type: 'text' as const,
+      content: `i usually compose as a medium of reflection through structure, where sound is not necessarily primary, singular, or even present. i aim for unidentifiable occurrences which are in-between various mediums, genres and forms. i aim for an experience, which is often close to the state of aloneness.`,
+    },
+    {
+      type: 'text' as const,
+      content: `i understand working in an extremely slow and slow process, sometimes arriving at only one composition, which lasts for several years.`,
+    },
+    {
+      type: 'text' as const,
+      content: `i am interested in working with performers who understand their identification as co-creators, whose input becomes a must to take into account and to shape the composition itself.`,
+    },
+    {
+      type: 'photo' as const,
+      photoIndex: 0,
+    },
+    {
+      type: 'highlight' as const,
+      content: `the possibility of working with people in all their complexity and inconsistency is of paramount importance. i see performers as collaborators whose input encompasses not merely musical qualities, but also personalities, modes of self-presentation, and lived experiences. co-creation, however, as they choose to bring to the table, and this requires time for discussion, testing, experimentation, and finding a common language, inherent to the composition itself.`,
+    },
+    {
+      type: 'text' as const,
+      content: `a lot of my pieces can be tricky to realise as they ask for special skills, performative actions and unusual equipment. i am sceptical of the concert hall format and want to bring my compositions to the streets, to different places, and this requires time for discussion, testing, experimentation, and finding a common language, inherent to the composition itself.`,
+    },
+    {
+      type: 'quote' as const,
+      content: `if you are willing to enter into an experimental process, drawn to challenges, and fascinated by the glow of the unknown — please reach out to me! i'm always open to new collaborations, ideas, and dialogues.`,
+    },
+    {
+      type: 'contact' as const,
+    },
+    {
+      type: 'photo' as const,
+      photoIndex: 1,
+    },
+  ],
 };
-
-interface data {
-  photo: string,
-  collaborationImg: string,
-  description: string,
-  contact: string,
-  collaborationName: string,
-} 

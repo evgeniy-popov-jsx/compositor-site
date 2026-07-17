@@ -15,6 +15,15 @@
   --color-accent: #164DC4;
 }
 
+html,
 body {
   background-color: var(--color-background);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }

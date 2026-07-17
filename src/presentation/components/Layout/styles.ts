@@ -64,6 +64,7 @@ const Link = styled(RLink)`
   margin-top: 12px;
   margin-bottom: 5px;
   text-decoration: none;
+  font-family: 'Syne Mono', monospace;
   &:hover {
     color: var(--color-accent);
   }
@@ -72,6 +73,7 @@ const Link = styled(RLink)`
 const SubLink = styled.div`
   font-size: 20px;
   line-height: 25px;
+  font-family: 'Syne Mono', monospace;
 
   @media (max-width: 490px) {
     max-width: 300px;

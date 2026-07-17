@@ -1,5 +1,4 @@
 import { Image as ANTImage } from 'antd';
-import { Link as RLink} from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -8,46 +7,135 @@ const GlobalStyle = createGlobalStyle`
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
-  .ant-image {
-    max-width: 550px;
+`;
+
+const PhotoWrapper = styled.div`
+  width: 100%;
+  max-width: 550px;
+`;
+
+const PhotoOffset = styled.div`
+  width: 100%;
+  max-width: 550px;
+  margin-left: 25%;
+
+  @media (max-width: 900px) {
+    margin-left: 15%;
+    max-width: 500px;
+  }
+
+  @media (max-width: 670px) {
+    margin-left: 0;
+    max-width: 100%;
   }
 `;
+
 const Image = styled(ANTImage)`
-  object-position: center;
+  width: 100%;
+  height: auto;
+  object-position: center top;
   object-fit: cover;
-  max-width: 550px;
-  max-height: 500px ;
   cursor: pointer;
   transition: filter 0.3s ease;
-  
+
   &:hover {
     filter: brightness(70%);
   }
 `;
+
 const Paragraph = styled.p`
-  text-align: justify;
+  text-align: left;
   hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   word-wrap: break-word;
+  overflow-wrap: break-word;
+  orphans: 3;
+  widows: 3;
   max-width: 550px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   text-transform: lowercase;
 `;
-const Link = styled(RLink)`
-  display: block;
-  text-decoration: underline;
-  max-width: 300px;
-  font-size: 20px;
+
+const Quote = styled.blockquote`
+  font-size: clamp(24px, 4vw, 55px);
+  line-height: 1.2;
+  color: var(--color-accent);
+  font-weight: 500;
+  max-width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+  z-index: 2;
+
+  @media (max-width: 900px) {
+    margin-left: 15%;
+    max-width: 500px;
+  }
+
+  @media (max-width: 670px) {
+    margin-left: 0;
+    max-width: 100%;
+  }
 `;
-const LinkContainer = styled.div`
+
+const ContactWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  text-transform: lowercase;
+  max-width: 700px;
+  margin-top: 20px;
 `;
+
+const ContactLabel = styled.span`
+  font-size: clamp(24px, 4vw, 55px);
+  line-height: 1.2;
+  color: var(--color-accent);
+  font-weight: 500;
+`;
+
+const ContactLink = styled.a`
+  font-size: clamp(24px, 4vw, 55px);
+  line-height: 1.2;
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: underline;
+  word-break: break-all;
+  color: var(--color-accent);
+  text-decoration: none;
+`;
+
+const Highlight = styled.p`
+  font-size: clamp(16px, 2.5vw, 24px);
+  line-height: 1.4;
+  color: var(--color-text);
+  font-weight: 700;
+  max-width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+
+  @media (max-width: 900px) {
+    margin-left: 15%;
+    max-width: 500px;
+  }
+
+  @media (max-width: 670px) {
+    margin-left: 0;
+    max-width: 100%;
+  }
+`;
+
 export const Styled = {
-  Image,
   GlobalStyle,
+  PhotoWrapper,
+  PhotoOffset,
+  Image,
   Paragraph,
-  Link,
-  LinkContainer
+  Quote,
+  ContactWrapper,
+  ContactLabel,
+  ContactLink,
+  Highlight,
 };

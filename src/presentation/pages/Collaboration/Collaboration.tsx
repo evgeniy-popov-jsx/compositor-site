@@ -5,48 +5,50 @@ import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-
 import { Loader } from 'presentation/components/Loader/Loader';
 
 export const Collaboration: React.FC = () => {
-  const { 
-    photo, 
-    collaborationImg, 
-    collaborationName, 
-    description, 
-    contact 
-  } = data;
+  const { photo1, photo2, contact, sections } = data;
 
-  const paragraphs = description.trim().split('\n').filter(paragraph => paragraph.length > 0);
+  const photos = [photo1, photo2];
 
   const PreviewType = {
     mask: null,
-    toolbarRender: ()=> null,
+    toolbarRender: () => null,
   };
 
   return (
     <ContentWrapper position='top'>
       <Styled.GlobalStyle />
-      <Styled.Image 
-        className="custom-preview"
-        src={photo} 
-        width={'180px'}
-        height={'180px'}
-        preview={PreviewType}
-        placeholder={<Loader />}
-        alt='polina korobkova'>
-      </Styled.Image>
-      {paragraphs.map((paragraph, index) => (
-        <Styled.Paragraph key={index}>{paragraph}</Styled.Paragraph>
-      ))}
-      <Styled.LinkContainer>
-        <Styled.Paragraph>Contact:</Styled.Paragraph>
-        <Styled.Link to={`mailto:${contact}`}>{contact}</Styled.Link>
-      </Styled.LinkContainer>
-      <Styled.Image 
-        className="custom-preview"
-        src={collaborationImg}
-        preview={PreviewType}
-        placeholder={<Loader />}
-        alt='polina korobkova'>
-      </Styled.Image>
-      <Styled.Paragraph>{collaborationName}</Styled.Paragraph>
+      {sections.map((section, index) => {
+        if (section.type === 'photo') {
+          const Wrapper = section.photoIndex === 1 ? Styled.PhotoOffset : Styled.PhotoWrapper;
+          return (
+            <Wrapper key={index}>
+              <Styled.Image
+                src={photos[section.photoIndex]}
+                preview={PreviewType}
+                placeholder={<Loader />}
+                alt='polina korobkova'
+              />
+            </Wrapper>
+          );
+        }
+        if (section.type === 'quote') {
+          return <Styled.Quote key={index}>{section.content}</Styled.Quote>;
+        }
+        if (section.type === 'highlight') {
+          return <Styled.Highlight key={index}>{section.content}</Styled.Highlight>;
+        }
+        if (section.type === 'contact') {
+          return (
+            <Styled.ContactWrapper key={index}>
+              <Styled.ContactLabel>contact:</Styled.ContactLabel>
+              <Styled.ContactLink href={`mailto:${contact}`}>
+                {contact}
+              </Styled.ContactLink>
+            </Styled.ContactWrapper>
+          );
+        }
+        return <Styled.Paragraph key={index}>{section.content}</Styled.Paragraph>;
+      })}
     </ContentWrapper>
   );
 };

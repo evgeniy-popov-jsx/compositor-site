@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
+const Container = styled.div<{ $position: 'top' | 'bottom' | 'audio' }>`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   width: 100%;
   height: 100%;
   min-height: 100%;
@@ -12,22 +12,27 @@ const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
   background: var(--color-background);
   overflow-y: auto;
 
-  ${({ $position }) => $position === 'bottom' && `
+  ${({ $position }) =>
+    $position === 'bottom' &&
+    `
     gap: 40px;
     justify-content: flex-end;
   `}
-  ${({ $position }) => $position === 'audio' && `
+  ${({ $position }) =>
+    $position === 'audio' &&
+    `
     padding-bottom: 130px;
   `}
 
   scrollbar-width: none;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
 
   &::-webkit-scrollbar {
     width: 0;
     height: 0;
   }
-  &:before, &:after {
+  &:before,
+  &:after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -50,5 +55,5 @@ const Container = styled.div<{$position: 'top' | 'bottom' | 'audio'}>`
 `;
 
 export const Styled = {
-  Container
+  Container,
 };
