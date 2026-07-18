@@ -9,6 +9,18 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const Header = styled.div`
+  color: var(--color-accent);
+  font-size: 35px;
+  margin-top: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 900px) {
+    margin-top: 30px;
+  }
+`;
+
 const PhotoWrapper = styled.div`
   width: 100%;
   max-width: 550px;
@@ -28,6 +40,13 @@ const PhotoOffset = styled.div`
     margin-left: 0;
     max-width: 100%;
   }
+`;
+
+const Credit = styled.p`
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-top: 8px;
 `;
 
 const Image = styled(ANTImage)`
@@ -53,17 +72,16 @@ const Paragraph = styled.p`
   orphans: 3;
   widows: 3;
   max-width: 550px;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 1.6;
-  text-transform: lowercase;
 `;
 
 const Quote = styled.blockquote`
   font-size: clamp(24px, 4vw, 55px);
-  line-height: 1.2;
+  line-height: 1;
   color: var(--color-accent);
-  font-weight: 500;
-  max-width: 600px;
+  font-weight: 600;
+  max-width: 780px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 25%;
@@ -71,7 +89,9 @@ const Quote = styled.blockquote`
 
   @media (max-width: 900px) {
     margin-left: 15%;
+    padding-left: 65px;
     max-width: 500px;
+    font-size: 40px;
   }
 
   @media (max-width: 670px) {
@@ -83,23 +103,23 @@ const Quote = styled.blockquote`
 const ContactWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  max-width: 700px;
+  max-width: 750px;
   margin-top: 20px;
 `;
 
 const ContactLabel = styled.span`
-  font-size: clamp(24px, 4vw, 55px);
+  font-size: clamp(30px, 4vw, 55px);
   line-height: 1.2;
   color: var(--color-accent);
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: -10px;
 `;
 
 const ContactLink = styled.a`
-  font-size: clamp(24px, 4vw, 55px);
+  font-size: clamp(30px, 4vw, 55px);
   line-height: 1.2;
   color: var(--color-text);
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: underline;
   word-break: break-all;
   color: var(--color-accent);
@@ -118,6 +138,8 @@ const Highlight = styled.p`
 
   @media (max-width: 900px) {
     margin-left: 15%;
+    padding-left: 65px;
+    font-size: 24px;
     max-width: 500px;
   }
 
@@ -132,10 +154,12 @@ export const Styled = {
   PhotoWrapper,
   PhotoOffset,
   Image,
+  Credit,
   Paragraph,
   Quote,
   ContactWrapper,
   ContactLabel,
   ContactLink,
   Highlight,
+  Header,
 };

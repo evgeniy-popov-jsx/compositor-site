@@ -5,7 +5,7 @@ import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-
 import { Loader } from 'presentation/components/Loader/Loader';
 
 export const Collaboration: React.FC = () => {
-  const { photo1, photo2, contact, sections } = data;
+  const { photo1, photo2, contact, credit, sections } = data;
 
   const photos = [photo1, photo2];
 
@@ -17,17 +17,22 @@ export const Collaboration: React.FC = () => {
   return (
     <ContentWrapper position='top'>
       <Styled.GlobalStyle />
+      <Styled.Header>On collaborating with me</Styled.Header>
       {sections.map((section, index) => {
         if (section.type === 'photo') {
-          const Wrapper = section.photoIndex === 1 ? Styled.PhotoOffset : Styled.PhotoWrapper;
+          const Wrapper =
+            section.photoIndex === 1 ? Styled.PhotoOffset : Styled.PhotoWrapper;
           return (
             <Wrapper key={index}>
               <Styled.Image
                 src={photos[section.photoIndex]}
                 preview={PreviewType}
                 placeholder={<Loader />}
-                alt='polina korobkova'
+                alt='lin korobkova'
               />
+              {section.photoIndex === 0 && (
+                <Styled.Credit>{credit}</Styled.Credit>
+              )}
             </Wrapper>
           );
         }

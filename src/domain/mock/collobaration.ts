@@ -2,18 +2,19 @@ export const data = {
   photo1: '/photoCollaboration_1.png',
   photo2: '/photoCollaboration_2.png',
   contact: 'linkorobkova@gmail.com',
+  credit: '@Astrid Ackermann',
   sections: [
     {
       type: 'text' as const,
-      content: `i usually compose as a medium of reflection through structure, where sound is not necessarily primary, singular, or even present. i aim for unidentifiable occurrences which are in-between various mediums, genres and forms. i aim for an experience, which is often close to the state of aloneness.`,
+      content: `I construe composing as a medium of reflection through structuring whose logic is not primarily sonic. Simultaneously, sensuous experience is woven into all of my works’ construction, sometimes borrowing from non-notated music a mode of attention closer to the one of witnessing.`,
     },
     {
       type: 'text' as const,
-      content: `i understand working in an extremely slow and slow process, sometimes arriving at only one composition, which lasts for several years.`,
+      content: `I resist reproducing techniques already elaborated in my previous compositions which necessarily limits the number of pieces i can compose per year.`,
     },
     {
       type: 'text' as const,
-      content: `i am interested in working with performers who understand their identification as co-creators, whose input becomes a must to take into account and to shape the composition itself.`,
+      content: `Aiming at occurrences that defy clear identification or categorisation, each of my projects becomes a field trip into an alien territory, leaving the outcome unpredictable and the process fragile and unstable.`,
     },
     {
       type: 'photo' as const,
@@ -21,15 +22,15 @@ export const data = {
     },
     {
       type: 'highlight' as const,
-      content: `the possibility of working with people in all their complexity and inconsistency is of paramount importance. i see performers as collaborators whose input encompasses not merely musical qualities, but also personalities, modes of self-presentation, and lived experiences. co-creation, however, as they choose to bring to the table, and this requires time for discussion, testing, experimentation, and finding a common language, inherent to the composition itself.`,
+      content: `The possibility of working with people willing to embark on such an endeavour is of paramount importance to me since i understand performers as collaborators whose musical knowledge, personalities, modes of self-presentation, and lived experiences may all enter the artistic realm, insofar as they choose to bring them into it. Such an exchange requires time for discussion, testing, and revision, all of which i consider integral to the composition itself.`,
     },
     {
       type: 'text' as const,
-      content: `a lot of my pieces can be tricky to realise as they ask for special skills, performative actions and unusual equipment. i am sceptical of the concert hall format and want to bring my compositions to the streets, to different places, and this requires time for discussion, testing, experimentation, and finding a common language, inherent to the composition itself.`,
+      content: `Many of my pieces can be tricky to realise as they may call for specialised skills, performative actions or unusual equipment, therefore usually they cannot be prepared at short notice. My dream is to bring my compositions to the streets, clubs, and other unexpected places, where they can be encountered by audiences beyond the contemporary-music circuit.`,
     },
     {
       type: 'quote' as const,
-      content: `if you are willing to enter into an experimental process, drawn to challenges, and fascinated by the glow of the unknown — please reach out to me! i'm always open to new collaborations, ideas, and dialogues.`,
+      content: `If you are willing to enter into an experimental process, drawn to challenges, and fascinated by the glow of the unknown\u00A0— please reach out to me! I’m always open to new collaborations, ideas, and dialogues.`,
     },
     {
       type: 'contact' as const,

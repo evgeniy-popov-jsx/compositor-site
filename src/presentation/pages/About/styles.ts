@@ -9,6 +9,18 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const Header = styled.div`
+  color: var(--color-accent);
+  font-size: 35px;
+  margin-top: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 900px) {
+    margin-top: 30px;
+  }
+`;
+
 const PhotoWrapper = styled.div`
   width: 100%;
   max-width: 550px;
@@ -43,16 +55,15 @@ const Paragraph = styled.p`
   orphans: 3;
   widows: 3;
   max-width: 550px;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 1.6;
-  text-transform: lowercase;
 `;
 
 const Quote = styled.blockquote`
   font-size: clamp(24px, 4vw, 55px);
-  line-height: 1.1;
+  line-height: 1;
   color: var(--color-accent);
-  font-weight: 500;
+  font-weight: 600;
   max-width: 600px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -61,7 +72,9 @@ const Quote = styled.blockquote`
 
   @media (max-width: 900px) {
     margin-left: 15%;
+    padding-left: 65px;
     max-width: 500px;
+    font-size: 40px;
   }
 
   @media (max-width: 670px) {
@@ -72,8 +85,10 @@ const Quote = styled.blockquote`
 
 const CvLink = styled.a`
   display: inline-block;
-  font-size: 16px;
-  color: var(--color-text);
+  width: fit-content;
+  font-family: 'Syne Mono', monospace;
+  font-size: 28px;
+  color: var(--color-accent);
   text-decoration: none;
   margin-top: 20px;
 
@@ -89,4 +104,5 @@ export const Styled = {
   Paragraph,
   Quote,
   CvLink,
+  Header,
 };
