@@ -9,52 +9,26 @@ import { MaterialComponent } from 'presentation/components/Material-component/Ma
 import { Text } from 'presentation/pages/Text/Text';
 import { Performances } from 'presentation/pages/Performances/Performances';
 import { Performance } from 'presentation/pages/Performance/Performance';
+import { LayoutPage } from 'presentation/components/Layout/Layout';
 
 export const RouterConfig = () => {
 	const config = useRoutes([
 		{
 			path: '/',
-			element: null,
-		},
-		{
-			path: '/about',
-			element: <About />,
-		},
-		{
-			path: '/collaboration',
-			element: <Collaboration />,
-		},
-		{
-			path: '/compositions',
-			element: <Compositions />,
-		},
-		{
-			path: '/compositions/:id',
-			element: <CompositionPage />,
-		},
-		{
-			path: '/compositions/anonymous-materials',
-			element: <Materials />,
-		},
-		{
-			path: '/compositions/anonymous-materials/:id',
-			element: <MaterialComponent />,
-		},
-		{
-			path: '/texts',
-			element: <Texts />,
-		},
-		{
-			path: '/texts/:id',
-			element: <Text />,
-		},
-		{
-			path: '/performances',
-			element: <Performances />,
-		},
-		{
-			path: '/performances/:id',
-			element: <Performance />,
+			element: <LayoutPage />,
+			children: [
+				{ index: true, element: null },
+				{ path: 'about', element: <About /> },
+				{ path: 'collaboration', element: <Collaboration /> },
+				{ path: 'compositions', element: <Compositions /> },
+				{ path: 'compositions/:id', element: <CompositionPage /> },
+				{ path: 'compositions/anonymous-materials', element: <Materials /> },
+				{ path: 'compositions/anonymous-materials/:id', element: <MaterialComponent /> },
+				{ path: 'texts', element: <Texts /> },
+				{ path: 'texts/:id', element: <Text /> },
+				{ path: 'performances', element: <Performances /> },
+				{ path: 'performances/:id', element: <Performance /> },
+			],
 		},
 	]);
 

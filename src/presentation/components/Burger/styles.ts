@@ -1,5 +1,5 @@
 import { NavLink as RLink } from 'react-router-dom';
-import Div100vh from 'react-div-100vh'
+import Div100vh from 'react-div-100vh';
 import styled, { keyframes } from 'styled-components';
 
 const Burger = styled.div`
@@ -12,7 +12,7 @@ const Burger = styled.div`
   top: 10px;
   left: 0px;
 
-  @media (max-width: 670px) {
+  @media (max-width: 815px) {
     display: block;
   }
 `;
@@ -47,46 +47,61 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   pointer-events: auto;
-  z-index: 3
+  z-index: 3;
 `;
-const Line = styled.div<{ $isChecked: boolean; $position: 'top' | 'middle' | 'bottom'; }>`
+const Line = styled.div<{ $isChecked: boolean; $position: 'top' | 'middle' | 'bottom' }>`
   width: 100%;
   height: 2px;
   background: black;
   position: absolute;
   transition-duration: 0.35s;
 
-  ${({ $position }) => $position === 'top' && `
+  ${({ $position }) =>
+    $position === 'top' &&
+    `
     bottom: calc(50% + 11px + 4px / 2);
     transition-property: bottom, transform;
     transition-delay: calc(0s + 0.35s), 0s;
   `}
 
-  ${({ $position }) => $position === 'middle' && `
+  ${({ $position }) =>
+    $position === 'middle' &&
+    `
     top: calc(50% - 12px / 2);
     transition-property: opacity;
     transition-delay: calc(0s + 0.35s);
   `}
 
-  ${({ $position }) => $position === 'bottom' && `
+  ${({ $position }) =>
+    $position === 'bottom' &&
+    `
     top: calc(50% + 2px + 4px / 2);
     transition-property: top, transform;
     transition-delay: calc(0s + 0.35s), 0s;
   `}
 
-  ${({ $isChecked, $position }) => $isChecked && $position === 'top' && `
+  ${({ $isChecked, $position }) =>
+    $isChecked &&
+    $position === 'top' &&
+    `
     bottom: calc(50% + 8px / 2);
     transform: rotate(135deg);
     transition-delay: 0s, calc(0s + 0.35s);
   `}
 
-  ${({ $isChecked, $position }) => $isChecked && $position === 'middle' && `
+  ${({ $isChecked, $position }) =>
+    $isChecked &&
+    $position === 'middle' &&
+    `
     opacity: 0;
     transition-duration: 0s;
     transition-delay: calc(0s + 0.1s);
   `}
 
-  ${({ $isChecked, $position }) => $isChecked && $position === 'bottom' && `
+  ${({ $isChecked, $position }) =>
+    $isChecked &&
+    $position === 'bottom' &&
+    `
     top: calc(50% - 12px / 2);
     transform: rotate(225deg);
     transition-delay: 0s, calc(0s + 0.35s);
@@ -98,7 +113,9 @@ const Link = styled(RLink)<{ $isActive?: boolean }>`
   pointer-events: auto;
   font-size: 20px;
 
-  ${({ $isActive })=> $isActive && `
+  ${({ $isActive }) =>
+    $isActive &&
+    `
     color: var(--color-accent);
 
     &::before {
@@ -132,27 +149,27 @@ const Menu = styled.div<{ $isChecked: boolean }>`
     transition: transform 0.3s ease;
   }
   ${Link}:nth-child(1) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.1s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(160%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.1s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(160%)')};
   }
   ${Link}:nth-child(2) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.2s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(160%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.2s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(160%)')};
   }
   ${Link}:nth-child(3) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.3s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(160%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.3s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(160%)')};
   }
   ${Link}:nth-child(4) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.4s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(160%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.4s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(160%)')};
   }
   ${Link}:nth-child(5) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.5s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(160%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.5s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(160%)')};
   }
 `;
-const Footer = styled.div<{ $isChecked: boolean}>`
+const Footer = styled.div<{ $isChecked: boolean }>`
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -164,16 +181,16 @@ const Footer = styled.div<{ $isChecked: boolean}>`
     transition: transform 0.3s ease;
   }
   ${Link}:nth-child(1) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.3s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(150%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.3s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(150%)')};
   }
   ${Link}:nth-child(2) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.2s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(150%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.2s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(150%)')};
   }
   ${Link}:nth-child(3) {
-    transition-delay: ${({ $isChecked }) => $isChecked ? '0.1s' : '0s'};
-    transform: ${({ $isChecked }) => $isChecked ? 'none' : 'translateX(150%)'};
+    transition-delay: ${({ $isChecked }) => ($isChecked ? '0.1s' : '0s')};
+    transform: ${({ $isChecked }) => ($isChecked ? 'none' : 'translateX(150%)')};
   }
 
   &:hover {
@@ -201,16 +218,16 @@ const blurOut = keyframes`
     -webkit-backdrop-filter: blur(0px);
   }
 `;
-const Blur= styled.div<{ $isChecked: boolean }>`
+const Blur = styled.div<{ $isChecked: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: ${({ $isChecked }) => $isChecked ? 'rgba(240, 241, 235, 0.5)' : ''};
-  animation: ${({ $isChecked }) => $isChecked ? blurIn : blurOut} 0.5s forwards;
+  background: ${({ $isChecked }) => ($isChecked ? 'rgba(240, 241, 235, 0.5)' : '')};
+  animation: ${({ $isChecked }) => ($isChecked ? blurIn : blurOut)} 0.5s forwards;
   z-index: 1;
-  pointer-events: ${({ $isChecked }) => $isChecked ? 'auto' : 'none'};
+  pointer-events: ${({ $isChecked }) => ($isChecked ? 'auto' : 'none')};
 `;
 
 export const Styled = {
@@ -223,5 +240,5 @@ export const Styled = {
   Footer,
   Link,
   Blur,
-  CustomDiv
+  CustomDiv,
 };

@@ -4,11 +4,10 @@ import styled from 'styled-components';
 const Layout = styled.div`
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100%;
   background-color: var(--color-background);
-  overflow: hidden;
 
   @media (max-width: 670px) {
     grid-template-columns: 1fr;
@@ -33,20 +32,48 @@ const Content = styled.div`
   grid-column: 1;
   grid-row: 2;
   background-color: var(--color-background);
+  overflow: hidden;
 
   @media (max-width: 670px) {
     grid-column: 1;
   }
 `;
-const Sider = styled.div`
-  grid-column: 2;
-  grid-row: 1;
-  grid-row-end: 3;
-  background-color: var(--color-background);
 
-  @media (max-width: 670px) {
-    display: none;
+const NoteSlider = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+`;
+
+const NoteTrack = styled.div`
+  display: flex;
+  height: 100%;
+  width: max-content;
+  animation: slideRightToLeft 20s linear infinite;
+  will-change: transform;
+
+  @keyframes slideRightToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
+`;
+
+const NoteImageWrap = styled.div`
+  width: min-content;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+`;
+
+const NoteImage = styled.img`
+  width: 212vw;
+  height: 100%;
+  object-fit: cover;
 `;
 
 const Container = styled.div`
@@ -87,7 +114,10 @@ export const Styled = {
   Layout,
   Header,
   Content,
-  Sider,
+  NoteSlider,
+  NoteTrack,
+  NoteImageWrap,
+  NoteImage,
   Container,
   Link,
   SubLink,
