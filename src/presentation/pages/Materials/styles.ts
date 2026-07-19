@@ -12,12 +12,31 @@ const GlobalStyle = createGlobalStyle`
     color: var(--color-text);
   }
 `;
+const CoverImage = styled(ANTImage)`
+  width: 550px !important;
+  height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+
+  &:hover {
+    filter: brightness(70%);
+  }
+
+  @media (max-width: 670px) {
+    width: 100% !important;
+    height: auto;
+    max-width: 300px;
+  }
+`;
+
 const Image = styled(ANTImage)`
   object-position: center;
   object-fit: cover;
   cursor: pointer;
   transition: filter 0.3s ease;
-  
+
   &:hover {
     filter: brightness(70%);
   }
@@ -88,6 +107,7 @@ const Iframe = styled.iframe`
 export const Styled = {
   Link,
   GlobalStyle,
+  CoverImage,
   Image,
   Paragraph,
   ImageContainer,

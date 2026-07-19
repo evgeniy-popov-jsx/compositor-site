@@ -1,21 +1,24 @@
 import styled from 'styled-components';
 
-const Container = styled.div<{ $position: 'top' | 'bottom' | 'audio' }>`
+const Container = styled.div<{
+  $position: 'top' | 'bottom' | 'audio';
+  $customPadding?: string;
+}>`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   width: 100%;
   height: 100%;
   min-height: 100%;
-  padding: 30px 20px 20px 20px;
+  padding: ${({ $customPadding }) => $customPadding || '30px 20px 20px 20px'};
   background: var(--color-background);
   overflow-y: auto;
 
   ${({ $position }) =>
     $position === 'bottom' &&
     `
-    gap: 40px;
+    gap: 30px;
     justify-content: flex-end;
   `}
   ${({ $position }) =>

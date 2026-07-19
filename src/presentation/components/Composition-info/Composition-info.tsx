@@ -2,24 +2,45 @@ import { CompositionData } from 'domain/mock/compositions';
 import { Styled } from './styles';
 
 interface prop {
-  data: CompositionData,
-};
+  data: CompositionData;
+}
 
 export const CompositionInfo: React.FC<prop> = ({ data }) => {
-
   return (
     <Styled.Container>
-      <Styled.Content>{data.name}</Styled.Content>
-      <Styled.Content>{data.date}</Styled.Content>
-      <Styled.Content>{data.orchestra}</Styled.Content>
-      <Styled.Content>
-        {data.time.split('<br>').map((part, index) => (
-          <span key={index}>
-            {part}
-            {index < data.time.split('<br>').length - 1 && <br />}
-          </span>
-        ))}
-      </Styled.Content>
+      {data.duration && (
+        <Styled.Row>
+          <Styled.Label>duration</Styled.Label>
+          <Styled.Value>{data.duration}</Styled.Value>
+        </Styled.Row>
+      )}
+      {data.instrumentation && (
+        <Styled.Row>
+          <Styled.Label>instrumentation</Styled.Label>
+          <Styled.Value>{data.instrumentation}</Styled.Value>
+        </Styled.Row>
+      )}
+      {data.commission && (
+        <Styled.Row>
+          <Styled.Label>commission</Styled.Label>
+          <Styled.Value>{data.commission}</Styled.Value>
+        </Styled.Row>
+      )}
+      {data.performedBy && (
+        <Styled.Row>
+          <Styled.Label>performed by</Styled.Label>
+          <Styled.Value>{data.performedBy}</Styled.Value>
+        </Styled.Row>
+      )}
+      {data.projectDescription && (
+        <Styled.ProjectLink
+          href={data.projectDescription}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          project description &gt;
+        </Styled.ProjectLink>
+      )}
     </Styled.Container>
   );
 };

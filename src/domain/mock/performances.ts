@@ -6,7 +6,8 @@ export const data: Data[] = [
     src: false,
     date: '27.09.2024',
     title: '»tap my head and mike my brain, stick that needle in my vein«',
-    orchestra: 'for two performers with a similar range, recorded composed correspondence, two produced vinyls, phones and turntables',
+    orchestra:
+      'for two performers with a similar range, recorded composed correspondence, two produced vinyls, phones and turntables',
     description: 'juliet fraser and hannah weirich',
     place: 'bludenzer tage zeitgemäßer musik, bludenz, austria',
     link: '',
@@ -74,9 +75,10 @@ export const data: Data[] = [
     description: 'dissertation defence',
     place: 'HMDK, Stuttgart, Germany',
     link: '',
+    highlight: true,
     photos: [
-      'https://polina-image.s3.us-east-2.amazonaws.com/convert/strategies_of_resistance_photo_1.webp',
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/strategies_of_resistance_photo_2.webp',
+      'https://polina-image.s3.us-east-2.amazonaws.com/convert/strategies_of_resistance_photo_1.webp',
     ],
     videoSrc: 'https://www.youtube.com/embed/rzS7y3OfJ6I',
     desc: '',
@@ -88,7 +90,8 @@ export const data: Data[] = [
     src: true,
     date: '15.03.2024',
     title: 'round table: the political in music today (das politische der musik heute)',
-    description: 'with alan hilario, gordon kampe, julia mihály, matteo nanni, christian grüny',
+    description:
+      'with alan hilario, gordon kampe, julia mihály, matteo nanni, christian grüny',
     place: 'hamburg university, hamburg, germany',
     link: 'https://www.kulturwissenschaften.uni-hamburg.de/hm/uber-das-institut/aktuelles/2024-02-29-studientag-luigi-nono/flyer-nono-studientag.pdf',
     photos: [],
@@ -115,7 +118,8 @@ export const data: Data[] = [
     src: true,
     date: '17.11.2023',
     title: `performative lecture: »inter-medial tools«`,
-    description: 'workshop ‘agency, rituals, gestures’ (agency, ritual, geste. verteilte handlungsmacht in ästhetischen praktiken) at the research centre for aesthetics ',
+    description:
+      'workshop ‘agency, rituals, gestures’ (agency, ritual, geste. verteilte handlungsmacht in ästhetischen praktiken) at the research centre for aesthetics ',
     place: 'zurich university of arts, zurich, switzerland',
     link: 'https://www.zhdk.ch/file/live/fd/fddc3227fe0efed3b0038556b5a6c3959e189c5c/51969.pdf',
     photos: [],
@@ -124,12 +128,14 @@ export const data: Data[] = [
   },
   {
     id: 11,
+    highlight: true,
     upcoming: false,
     full: true,
     src: false,
     date: '14.10.2023',
     title: `round table: »crossing borders: artists in search of identity«`,
-    description: 'with peter paul kainrath, dmitriy renansky, vladimir rannev, christine fischer, jamilia jazylbekova and petros ovsepyan',
+    description:
+      'with peter paul kainrath, dmitriy renansky, vladimir rannev, christine fischer, jamilia jazylbekova and petros ovsepyan',
     place: 'voices festival. radialsystem, berlin, germany',
     link: 'https://voices-program.com/e2023/cro',
     photos: [
@@ -165,10 +171,13 @@ export const data: Data[] = [
     photos: [],
     coop: '',
     desc: '',
-    audio: [{
-      audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_ii/anonymous_material_ii_recording-MP3_pwmoby.mp3',
-      author: 'anonymous material ii',
-    }],
+    audio: [
+      {
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_ii/anonymous_material_ii_recording-MP3_pwmoby.mp3',
+        author: 'anonymous material ii',
+      },
+    ],
   },
   {
     id: 14,
@@ -177,9 +186,12 @@ export const data: Data[] = [
     src: false,
     date: '12.5, 14.5, 16.5, 17.5, 18.05.2022',
     title: `»S P U R E N«`,
-    orchestra: 'site-specific music theatre for 5 female performers and pre-recorded, automated arciorgano',
-    description: 'laure casin, elizabeth freyhoff, viktoria matt, alisa milosevic, julia pfänder, loudspeakers, arciorgano',
-    place: 'munich biennale for new music theatre. luftschutzbunker, basement of HMTM, Munich, Germany',
+    orchestra:
+      'site-specific music theatre for 5 female performers and pre-recorded, automated arciorgano',
+    description:
+      'laure casin, elizabeth freyhoff, viktoria matt, alisa milosevic, julia pfänder, loudspeakers, arciorgano',
+    place:
+      'munich biennale for new music theatre. luftschutzbunker, basement of HMTM, Munich, Germany',
     link: '',
     photos: [
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/SPUREN_photo_1.webp',
@@ -203,7 +215,7 @@ export const data: Data[] = [
     `,
     interview: 'interview with polina on S P U R E N ',
     interviewSrc: 'https://neoblog.mx3.ch/index.php/2022/04/27/4002/',
-    coop: '© jakob schad'
+    coop: '© jakob schad',
   },
   {
     id: 15,
@@ -253,9 +265,10 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/implanted+memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/implanted+memoreis/implanted_memoreis_audio-MP3_fcbtqy.mp3',
         author: 'implanted memories',
-      }
+      },
     ],
     coop: '',
     desc: '',
@@ -313,13 +326,15 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/flashbacks_to_perform/flashbacks_to_perform_audio_aleksandra-MP3_uazgnb.mp3',
-        author: 'performed by Alexandra Sikorskaya'
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/flashbacks_to_perform/flashbacks_to_perform_audio_aleksandra-MP3_uazgnb.mp3',
+        author: 'performed by Alexandra Sikorskaya',
       },
       {
-        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
-        author: 'performed by polina korobkova'
-      }
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/flashbacks_to_perform/flashbacks_to_perform_audio-MP3_fehsgt.mp3',
+        author: 'performed by polina korobkova',
+      },
     ],
     coop: '',
     desc: '',
@@ -340,8 +355,9 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/Biy_ensemble_content/Biy_ensemble_content_audio-MP3_dpsb3j.mp3',
-        author: 'Biy: eternal mantra for three fair maidens'
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/Biy_ensemble_content/Biy_ensemble_content_audio-MP3_dpsb3j.mp3',
+        author: 'Biy: eternal mantra for three fair maidens',
       },
     ],
     videoSrc: '',
@@ -385,7 +401,7 @@ export const data: Data[] = [
     src: false,
     date: '06.03.2020',
     title: `»trash as material: framing existing objects«`,
-    description:'presentation of work and research',
+    description: 'presentation of work and research',
     place: 'zurich university of arts, zurich, switzerland',
     link: '',
     photos: [
@@ -403,7 +419,8 @@ export const data: Data[] = [
     src: false,
     date: '28.02.2020',
     title: `»anonymous material i«`,
-    orchestra: 'for chamber orchestra with electric guitar and electric bass instead of string instruments and 3 singers',
+    orchestra:
+      'for chamber orchestra with electric guitar and electric bass instead of string instruments and 3 singers',
     description: 'orkest de ereprijs',
     place: 'gigant, apeldoorn, netherlands',
     link: '',
@@ -413,10 +430,13 @@ export const data: Data[] = [
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/anonymous_material_i_photo_2.webp',
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/anonymous_material_i_photo_3.webp',
     ],
-    audio: [{
-      audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
-      author: 'anonymous material i',
-    }],
+    audio: [
+      {
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/anonymous_material_i/anonymous_material_i_audio-MP3_py1igr.mp3',
+        author: 'anonymous material i',
+      },
+    ],
     coop: '',
     desc: '',
   },
@@ -447,7 +467,7 @@ export const data: Data[] = [
     place: 'museum of scriabin, moscow',
     link: '',
     photos: [
-      'https://polina-image.s3.us-east-2.amazonaws.com/convert/flashbacks_to_perform_museum_of_scriabin_photo_1.webp'
+      'https://polina-image.s3.us-east-2.amazonaws.com/convert/flashbacks_to_perform_museum_of_scriabin_photo_1.webp',
     ],
     coop: '',
     desc: '',
@@ -471,9 +491,10 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/implanted+memoreis/implanted_memories_gare_du_nord_audio_1-MP3_r8wz5f.mp3',
-        author: 'excerpt'
-      }
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/implanted+memoreis/implanted_memories_gare_du_nord_audio_1-MP3_r8wz5f.mp3',
+        author: 'excerpt',
+      },
     ],
     coop: '',
     desc: '',
@@ -510,9 +531,10 @@ export const data: Data[] = [
     ],
     audio: [
       {
-        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/screech_of_a_sparrow/screech_of_a_sparrow_audio_1-MP3_ygxrax.mp3',
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/screech_of_a_sparrow/screech_of_a_sparrow_audio_1-MP3_ygxrax.mp3',
         author: 'Screech of a Sparrow',
-      }
+      },
     ],
     coop: '',
     desc: '',
@@ -532,13 +554,13 @@ export const data: Data[] = [
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/pocket_theatre_tchaikovsky_photo_1.webp',
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/pocket_theatre_tchaikovsky_photo_2.webp',
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/pocket_theatre_tchaikovsky_photo_3.webp',
-
     ],
     audio: [
       {
-        audio: 'https://polina-sound.s3.us-east-2.amazonaws.com/pocket_theatre_tchaikovsky/pocket_theatre_tchaikovsky_audio-MP3_wfstrk.mp3',
+        audio:
+          'https://polina-sound.s3.us-east-2.amazonaws.com/pocket_theatre_tchaikovsky/pocket_theatre_tchaikovsky_audio-MP3_wfstrk.mp3',
         author: 'pocket theatre. porcelain projection #2',
-      }
+      },
     ],
     coop: '',
     desc: '',
@@ -578,7 +600,6 @@ export const data: Data[] = [
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/lucerne_presentation_photo_2.webp',
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/lucerne_presentation_photo_3.webp',
       'https://polina-image.s3.us-east-2.amazonaws.com/convert/lucerne_presentation_photo_4.webp',
-
     ],
     coop: '',
     desc: '',
@@ -610,7 +631,8 @@ export interface Data {
   id: number;
   upcoming: boolean;
   full: boolean;
-  src: boolean,
+  src: boolean;
+  highlight?: boolean;
   date: string;
   title?: string;
   description?: string;

@@ -2,91 +2,139 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { ContentWrapper } from 'presentation/components/Content-wrapper/Content-wrapper';
 import { CompositionInfo } from 'presentation/components/Composition-info/Composition-info';
-import { materials } from 'domain/mock/compositions';
+import { CompositionSection, materials } from 'domain/mock/compositions';
 import { Styled } from './styles';
 import { NavigateBack } from 'presentation/components/Navigate-back/Navigate-back';
-import AudioPlayer from 'presentation/components/Audio-player/Audio-player';
 import { Loader } from '../Loader/Loader';
 
 export const MaterialComponent: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const compositionData = materials.find(item => item.slug === id);
-
-  const paragraphs = compositionData?.description.trim().split('\n').filter(paragraph => paragraph.length > 0);
+  const compositionData = materials.find((item) => item.slug === id);
 
   const PreviewType = {
     mask: null,
-    toolbarRender: ()=> null,
+    toolbarRender: () => null,
+  };
+
+  const renderSection = (section: CompositionSection, index: number) => {
+    switch (section.type) {
+      case 'info':
+        return compositionData && <CompositionInfo key={index} data={compositionData} />;
+      case 'text':
+        return <Styled.Paragraph key={index}>{section.content}</Styled.Paragraph>;
+      case 'photo-pair':
+        return (
+          <Styled.PhotoPair key={index}>
+            {section.images?.map((src, imgIndex) => (
+              <Styled.PhotoPairItem key={imgIndex} $index={imgIndex}>
+                <Styled.Image
+                  className='custom-preview'
+                  src={src}
+                  preview={PreviewType}
+                  placeholder={<Loader />}
+                  alt={compositionData?.name}
+                />
+              </Styled.PhotoPairItem>
+            ))}
+          </Styled.PhotoPair>
+        );
+      case 'photo-grid':
+        return (
+          <Styled.PhotoGrid key={index}>
+            {section.images?.map((src, imgIndex) => (
+              <Styled.PhotoGridItem key={imgIndex} $index={imgIndex}>
+                <Styled.Image
+                  className='custom-preview'
+                  src={src}
+                  preview={PreviewType}
+                  placeholder={<Loader />}
+                  alt={compositionData?.name}
+                />
+              </Styled.PhotoGridItem>
+            ))}
+          </Styled.PhotoGrid>
+        );
+      case 'video':
+        return (
+          <Styled.VideoWrapper key={index}>
+            <Styled.Image
+              width={'100%'}
+              preview={{
+                mask: null,
+                destroyOnClose: true,
+                imageRender: () => (
+                  <Styled.Iframe
+                    src={section.src}
+                    allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                    referrerPolicy='strict-origin-when-cross-origin'
+                    allowFullScreen
+                  />
+                ),
+                toolbarRender: () => null,
+              }}
+              src='/preview.png'
+              placeholder={<Loader />}
+            />
+          </Styled.VideoWrapper>
+        );
+      case 'link':
+        return (
+          <Styled.Link
+            key={index}
+            to={section.href || '#'}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {section.label || section.content}
+          </Styled.Link>
+        );
+      default:
+        return null;
+    }
   };
 
   return (
     <ContentWrapper position={compositionData?.trackUrl ? 'audio' : 'top'}>
       <Styled.GlobalStyle />
-      <NavigateBack link='/compositions/anonymous-materials'/>
-      <Styled.Image 
-        className="custom-preview"
-        src={compositionData?.cover} 
-        width={'180px'}
-        height={'180px'}
-        preview={PreviewType}
-        placeholder={<Loader />}
-        alt='polina korobkova'>
-      </Styled.Image>
-      {compositionData && <CompositionInfo data={compositionData} />}
-      {paragraphs?.map((paragraph, index) => (
-        <Styled.Paragraph key={index}>
-          {paragraph}
-          <br></br>
-          {compositionData?.srcLink && <Styled.Link to={compositionData.srcLink} target="_blank" rel="noopener noreferrer">{compositionData.srcTitle}</Styled.Link>}
-        </Styled.Paragraph>
-      ))}
-      <Styled.ImageContainer>
-        <Styled.Image.PreviewGroup
-          preview={{toolbarRender: ()=> null}}
-        >
-          {compositionData?.images?.map((item) => {
-            return (
-              <Styled.Image 
-                key={item}
-                className="custom-preview"
-                src={item} 
-                width={'180px'}
-                height={'180px'}
-                preview={PreviewType}
-                placeholder={<Loader />}
-                alt='polina korobkova'>
-              </Styled.Image>
+      <NavigateBack link='/compositions/anonymous-materials' />
+      <Styled.Title>{compositionData?.name}</Styled.Title>
+      <Styled.HeaderSection>
+        <Styled.CoverImage
+          className='custom-preview'
+          src={compositionData?.cover}
+          preview={PreviewType}
+          placeholder={<Loader />}
+          alt={compositionData?.name}
+        />
+        {compositionData?.sections?.some((s) => s.type === 'info')
+          ? compositionData.sections.map((section, index) =>
+              section.type === 'info' ? renderSection(section, index) : null
             )
-          })}
-        </Styled.Image.PreviewGroup>
-        {compositionData?.videoSrc && 
-          <Styled.Image
-            width={'180px'}
-            preview={{
-              mask: null,
-              destroyOnClose: true,
-              imageRender: () => (
-                <Styled.Iframe 
-                  src={compositionData?.videoSrc}
-                  frameBorder="0" 
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  allowFullScreen>
-                </Styled.Iframe>
-              ),
-              toolbarRender: () => null,
-            }}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-          />
-        }
-      </Styled.ImageContainer>
-      {compositionData?.code && <Styled.Link to={compositionData?.code} target="_blank" rel="noopener noreferrer">{`code >`}</Styled.Link>}
-      {compositionData?.score && <Styled.Link to={compositionData?.score} target="_blank" rel="noopener noreferrer">{`score >`}</Styled.Link>}
-      {compositionData?.coopName && <Styled.Paragraph>{compositionData?.coopName}</Styled.Paragraph>}
-      {compositionData?.trackUrl && 
-        <Styled.PlayerContainer>
-          <AudioPlayer src={compositionData.trackUrl} trackName={compositionData.name}/>
-        </Styled.PlayerContainer>}
+          : compositionData && <CompositionInfo data={compositionData} />}
+      </Styled.HeaderSection>
+      {compositionData?.sections?.map((section, index) => {
+        if (section.type === 'info') return null;
+        return renderSection(section, index);
+      })}
+      {compositionData?.srcLink && (
+        <Styled.Link
+          to={compositionData.srcLink}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          {compositionData.srcTitle}
+        </Styled.Link>
+      )}
+      {compositionData?.score && (
+        <Styled.Link
+          to={compositionData.score}
+          target='_blank'
+          rel='noopener noreferrer'
+        >{`score >`}</Styled.Link>
+      )}
+      {compositionData?.coopName && (
+        <Styled.Paragraph>{compositionData.coopName}</Styled.Paragraph>
+      )}
     </ContentWrapper>
   );
 };

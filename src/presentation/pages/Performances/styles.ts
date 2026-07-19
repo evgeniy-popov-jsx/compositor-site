@@ -1,13 +1,11 @@
-import { Link as RLink} from 'react-router-dom';
+import { Link as RLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Filter = styled.div`
-  position: fixed;
   display: flex;
-  gap: 40px;
-  top: 145px;
-  left: 20px;
-  
+  gap: 100px;
+  padding-left: 20px;
+  padding-top: 130px;
   @media (max-width: 670px) {
     top: 100px;
   }
@@ -25,7 +23,9 @@ const Button = styled.button<{ $active: true | false }>`
     color: var(--color-accent);
   }
 
-  ${({ $active }) => $active  && `
+  ${({ $active }) =>
+    $active &&
+    `
     color: var(--color-accent);
   `}
 `;
@@ -37,5 +37,5 @@ const Link = styled(RLink)`
 export const Styled = {
   Link,
   Filter,
-  Button
+  Button,
 };
